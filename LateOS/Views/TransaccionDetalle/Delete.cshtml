@@ -1,0 +1,89 @@
+﻿@model LateOS.Models.tbTransaccionDetalle
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tbTransaccionDetalle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.trad_Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trad_Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trad_Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trad_Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trad_FechaCrea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trad_FechaCrea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trad_FechaModifica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trad_FechaModifica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbUsuarios.usu_NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbUsuarios.usu_NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbUsuarios1.usu_NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbUsuarios1.usu_NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbFactura.fact_Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbFactura.fact_Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbEstadoTransaccion.estt_Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbEstadoTransaccion.estt_Descripcion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

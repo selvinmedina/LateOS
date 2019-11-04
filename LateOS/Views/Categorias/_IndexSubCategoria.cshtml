@@ -1,0 +1,27 @@
+﻿@model IEnumerable<LateOS.Models.tbSubCategoria>
+
+<div class="ibox-content">
+    <table class="table table-bordered" id="tblSubCategoria" cellpadding="4">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.subc_Descripcion)
+                </th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr data-id="@item.subc_Id">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.subc_Descripcion)
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-xs" id="btnEditarSubCategoria">Editar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

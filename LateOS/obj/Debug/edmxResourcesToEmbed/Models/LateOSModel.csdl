@@ -1,0 +1,2932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LateOSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbUsuarios">
+    <Key>
+      <PropertyRef Name="usu_Id" />
+    </Key>
+    <Property Name="usu_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usu_NombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usu_Password" Type="Binary" MaxLength="64" FixedLength="false" Nullable="false" />
+    <Property Name="usu_EsActivo" Type="Boolean" Nullable="false" />
+    <Property Name="usu_RazonInactivo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="usu_EsAdministrador" Type="Boolean" />
+    <Property Name="usu_Token" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbCiudad" Relationship="Self.FK_Gral_tbCiudad_ciu_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbCiudad" />
+    <NavigationProperty Name="tbCiudad1" Relationship="Self.FK_Gral_tbCiudad_ciu_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbCiudad" />
+    <NavigationProperty Name="tbEmpleadoCargo" Relationship="Self.FK_Gral_tbEmpleadoCargo_empc_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbEmpleadoCargo" />
+    <NavigationProperty Name="tbEmpleadoCargo1" Relationship="Self.FK_Gral_tbEmpleadoCargo_empc_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbEmpleadoCargo" />
+    <NavigationProperty Name="tbEmpleadoDepartamento" Relationship="Self.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbEmpleadoDepartamento" />
+    <NavigationProperty Name="tbEmpleadoDepartamento1" Relationship="Self.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbEmpleadoDepartamento" />
+    <NavigationProperty Name="tbEmpleado" Relationship="Self.FK_Gral_tbEmpleados_emp_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbEmpleado" />
+    <NavigationProperty Name="tbEmpleado1" Relationship="Self.FK_Gral_tbEmpleados_emp_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbEmpleado" />
+    <NavigationProperty Name="tbEmpleado2" Relationship="Self.FK_Gral_tbEmpleados_usu_Id" FromRole="tbUsuarios" ToRole="tbEmpleado" />
+    <NavigationProperty Name="tbPais" Relationship="Self.FK_Gral_tbPais_pais_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbPais" />
+    <NavigationProperty Name="tbPais1" Relationship="Self.FK_Gral_tbPais_pais_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbPais" />
+    <NavigationProperty Name="tbTipoDescuento" Relationship="Self.FK_Gral_tbTipoDescuento_tipd_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbTipoDescuento" />
+    <NavigationProperty Name="tbTipoDescuento1" Relationship="Self.FK_Gral_tbTipoDescuento_tipd_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbTipoDescuento" />
+    <NavigationProperty Name="tbTipoPago" Relationship="Self.FK_Gral_tbTipoPago_tipp_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbTipoPago" />
+    <NavigationProperty Name="tbTipoPago1" Relationship="Self.FK_Gral_tbTipoPago_tipp_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbTipoPago" />
+    <NavigationProperty Name="tbCategoria" Relationship="Self.FK_Inv_tbCategoria_cat_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbCategoria" />
+    <NavigationProperty Name="tbCategoria1" Relationship="Self.FK_Inv_tbCategoria_cat_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbCategoria" />
+    <NavigationProperty Name="tbEntrada" Relationship="Self.FK_Inv_tbEntrada_ent_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbEntrada" />
+    <NavigationProperty Name="tbEntrada1" Relationship="Self.FK_Inv_tbEntrada_ent_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbEntrada" />
+    <NavigationProperty Name="InventarioFisico" Relationship="Self.FK_Inv_tbInventarioFisico_invf_UsuarioCrea" FromRole="tbUsuarios" ToRole="InventarioFisico" />
+    <NavigationProperty Name="InventarioFisico1" Relationship="Self.FK_Inv_tbInventarioFisico_invf_UsuarioModifica" FromRole="tbUsuarios" ToRole="InventarioFisico" />
+    <NavigationProperty Name="tbProveedor" Relationship="Self.FK_Inv_tbProveedor_prov_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbProveedor" />
+    <NavigationProperty Name="tbProveedor1" Relationship="Self.FK_Inv_tbProveedor_prov_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbProveedor" />
+    <NavigationProperty Name="tbSalida" Relationship="Self.FK_INV_tbSalida_sali_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbSalida" />
+    <NavigationProperty Name="tbSalida1" Relationship="Self.FK_INV_tbSalida_sali_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbSalida" />
+    <NavigationProperty Name="tbSubCategoria" Relationship="Self.FK_Inv_tbSubCategoria_subc_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbSubCategoria" />
+    <NavigationProperty Name="tbSubCategoria1" Relationship="Self.FK_Inv_tbSubCategoria_subc_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbSubCategoria" />
+    <NavigationProperty Name="tbClienteDireccion" Relationship="Self.FK_Vent_tbClienteDireccion_clid_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbClienteDireccion" />
+    <NavigationProperty Name="tbClienteDireccion1" Relationship="Self.FK_Vent_tbClienteDireccion_clid_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbClienteDireccion" />
+    <NavigationProperty Name="tbCliente" Relationship="Self.FK_Vent_tbClientes_cli_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbCliente" />
+    <NavigationProperty Name="tbCliente1" Relationship="Self.FK_Vent_tbClientes_cli_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbCliente" />
+    <NavigationProperty Name="tbCliente2" Relationship="Self.FK_Vent_tbClientes_usu_Id" FromRole="tbUsuarios" ToRole="tbCliente" />
+    <NavigationProperty Name="tbDevolucion" Relationship="Self.FK_Vent_tbDevolucion_dev_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbDevolucion" />
+    <NavigationProperty Name="tbDevolucion1" Relationship="Self.FK_Vent_tbDevolucion_dev_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbDevolucion" />
+    <NavigationProperty Name="tbDevolucionDetalle" Relationship="Self.FK_Vent_tbDevolucionDetalle_devd_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbDevolucionDetalle" />
+    <NavigationProperty Name="tbDevolucionDetalle1" Relationship="Self.FK_Vent_tbDevolucionDetalle_devd_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbDevolucionDetalle" />
+    <NavigationProperty Name="tbEstadoFactura" Relationship="Self.FK_Vent_tbEstadoFactura_estf_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbEstadoFactura" />
+    <NavigationProperty Name="tbEstadoFactura1" Relationship="Self.FK_Vent_tbEstadoFactura_estf_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbEstadoFactura" />
+    <NavigationProperty Name="tbEstadoTransaccion" Relationship="Self.FK_Vent_tbEstadoTransaccion_estt_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbEstadoTransaccion" />
+    <NavigationProperty Name="tbEstadoTransaccion1" Relationship="Self.FK_Vent_tbEstadoTransaccion_estt_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbEstadoTransaccion" />
+    <NavigationProperty Name="tbFactura" Relationship="Self.FK_Vent_tbFactura_fact_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbFactura" />
+    <NavigationProperty Name="tbFactura1" Relationship="Self.FK_Vent_tbFactura_fact_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbFactura" />
+    <NavigationProperty Name="tbFacturaDetalle" Relationship="Self.FK_Vent_tbFacturaDetalle_facd_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbFacturaDetalle" />
+    <NavigationProperty Name="tbFacturaDetalle1" Relationship="Self.FK_Vent_tbFacturaDetalle_facd_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbFacturaDetalle" />
+    <NavigationProperty Name="tbFormaPago" Relationship="Self.FK_Vent_tbFormaPago_forp_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbFormaPago" />
+    <NavigationProperty Name="tbFormaPago1" Relationship="Self.FK_Vent_tbFormaPago_forp_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbFormaPago" />
+    <NavigationProperty Name="tbListadoPrecio" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbListadoPrecio" />
+    <NavigationProperty Name="tbListadoPrecio1" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbListadoPrecio" />
+    <NavigationProperty Name="tbListadoPrecioDetalle" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbListadoPrecioDetalle" />
+    <NavigationProperty Name="tbListadoPrecioDetalle1" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbListadoPrecioDetalle" />
+    <NavigationProperty Name="tbTransaccionDetalle" Relationship="Self.FK_Vent_tbTransaccionDetalle_trad_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbTransaccionDetalle" />
+    <NavigationProperty Name="tbTransaccionDetalle1" Relationship="Self.FK_Vent_tbTransaccionDetalle_trad_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbTransaccionDetalle" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Inv_tbProducto_prod_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbProducto" />
+    <NavigationProperty Name="tbProducto1" Relationship="LateOSModel.FK_Inv_tbProducto_prod_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbProducto" />
+    <NavigationProperty Name="tbProductoImagen" Relationship="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioCrea" FromRole="tbUsuarios" ToRole="tbProductoImagen" />
+    <NavigationProperty Name="tbProductoImagen1" Relationship="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioModifica" FromRole="tbUsuarios" ToRole="tbProductoImagen" />
+    <NavigationProperty Name="Usuario_Rol" Relationship="LateOSModel.FK_ACCE_TBUSUARIO_usu_Id" FromRole="tbUsuarios" ToRole="Usuario_Rol" />
+    <Property Name="usu_Online" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbCiudad">
+    <Key>
+      <PropertyRef Name="ciu_Id" />
+    </Key>
+    <Property Name="ciu_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ciu_Descripcion" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pais_Id" Type="Int32" Nullable="false" />
+    <Property Name="ciu_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="ciu_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ciu_UsuarioModifica" Type="Int32" />
+    <Property Name="ciu_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Gral_tbCiudad_ciu_UsuarioCrea" FromRole="tbCiudad" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Gral_tbCiudad_ciu_UsuarioModifica" FromRole="tbCiudad" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbPais" Relationship="Self.FK_Gral_tbCiudad_Id_Pais" FromRole="tbCiudad" ToRole="tbPais" />
+    <NavigationProperty Name="tbClienteDireccion" Relationship="Self.FK_Vent_tbClienteDireccion_ciu_Id" FromRole="tbCiudad" ToRole="tbClienteDireccion" />
+  </EntityType>
+  <EntityType Name="tbEmpleado">
+    <Key>
+      <PropertyRef Name="emp_Id" />
+    </Key>
+    <Property Name="emp_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_Identidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emp_Nombres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="emp_Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="emp_FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="emp_Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="emp_CorreoElectronico" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="emp_Telefono" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="emp_FechaIngreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="emp_EsActivo" Type="Boolean" />
+    <Property Name="empc_id" Type="Int32" Nullable="false" />
+    <Property Name="usu_Id" Type="Int32" Nullable="false" />
+    <Property Name="emp_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="emp_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="emp_UsuarioModifica" Type="Int32" />
+    <Property Name="emp_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Gral_tbEmpleados_emp_UsuarioCrea" FromRole="tbEmpleado" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Gral_tbEmpleados_emp_UsuarioModifica" FromRole="tbEmpleado" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios2" Relationship="Self.FK_Gral_tbEmpleados_usu_Id" FromRole="tbEmpleado" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbEmpleadoCargo" Relationship="Self.FK_Gral_tbEmpleados_IdCargo" FromRole="tbEmpleado" ToRole="tbEmpleadoCargo" />
+  </EntityType>
+  <EntityType Name="tbEmpleadoCargo">
+    <Key>
+      <PropertyRef Name="empc_Id" />
+    </Key>
+    <Property Name="empc_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empc_Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="empd_Id" Type="Int32" Nullable="false" />
+    <Property Name="empc_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="empc_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="empc_UsuarioModifica" Type="Int32" />
+    <Property Name="empc_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Gral_tbEmpleadoCargo_empc_UsuarioCrea" FromRole="tbEmpleadoCargo" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Gral_tbEmpleadoCargo_empc_UsuarioModifica" FromRole="tbEmpleadoCargo" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbEmpleado" Relationship="Self.FK_Gral_tbEmpleados_IdCargo" FromRole="tbEmpleadoCargo" ToRole="tbEmpleado" />
+    <NavigationProperty Name="tbEmpleadoDepartamento" Relationship="Self.FK_Gral_tbEmpleadoCargo_empd_Id" FromRole="tbEmpleadoCargo" ToRole="tbEmpleadoDepartamento" />
+  </EntityType>
+  <EntityType Name="tbEmpleadoDepartamento">
+    <Key>
+      <PropertyRef Name="empd_Id" />
+    </Key>
+    <Property Name="empd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empd_Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="empd_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="empd_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="empd_UsuarioModifica" Type="Int32" />
+    <Property Name="empd_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioCrea" FromRole="tbEmpleadoDepartamento" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioModifica" FromRole="tbEmpleadoDepartamento" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbEmpleadoCargo" Relationship="Self.FK_Gral_tbEmpleadoCargo_empd_Id" FromRole="tbEmpleadoDepartamento" ToRole="tbEmpleadoCargo" />
+  </EntityType>
+  <EntityType Name="tbPais">
+    <Key>
+      <PropertyRef Name="pais_Id" />
+    </Key>
+    <Property Name="pais_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pais_Descripcion" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pais_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="pais_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="pais_UsuarioModifica" Type="Int32" />
+    <Property Name="pais_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Gral_tbPais_pais_UsuarioCrea" FromRole="tbPais" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Gral_tbPais_pais_UsuarioModifica" FromRole="tbPais" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbCiudad" Relationship="Self.FK_Gral_tbCiudad_Id_Pais" FromRole="tbPais" ToRole="tbCiudad" />
+  </EntityType>
+  <EntityType Name="tbTipoDescuento">
+    <Key>
+      <PropertyRef Name="tipd_Id" />
+    </Key>
+    <Property Name="tipd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipd_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tipd_Porcentaje" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="tipd_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="tipd_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tipd_UsuarioModifica" Type="Int32" />
+    <Property Name="tipd_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Gral_tbTipoDescuento_tipd_UsuarioCrea" FromRole="tbTipoDescuento" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Gral_tbTipoDescuento_tipd_UsuarioModifica" FromRole="tbTipoDescuento" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbListadoPrecioDetalle" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_tipd_Id" FromRole="tbTipoDescuento" ToRole="tbListadoPrecioDetalle" />
+  </EntityType>
+  <EntityType Name="tbTipoPago">
+    <Key>
+      <PropertyRef Name="tipp_Id" />
+    </Key>
+    <Property Name="tipp_Id" Type="Int32" Nullable="false" />
+    <Property Name="tipp_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tipp_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="tipp_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tipp_UsuarioModifica" Type="Int32" />
+    <Property Name="tipp_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Gral_tbTipoPago_tipp_UsuarioCrea" FromRole="tbTipoPago" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Gral_tbTipoPago_tipp_UsuarioModifica" FromRole="tbTipoPago" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbFactura" Relationship="Self.FK_Vent_tbFactura_fact_IdPago" FromRole="tbTipoPago" ToRole="tbFactura" />
+  </EntityType>
+  <EntityType Name="InventarioFisico">
+    <Key>
+      <PropertyRef Name="invf_id" />
+    </Key>
+    <Property Name="invf_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="invf_total" Type="Int32" Nullable="false" />
+    <Property Name="invf_FechaInventario" Type="DateTime" Precision="3" />
+    <Property Name="invf_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="invf_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="invf_UsuarioModifica" Type="Int32" />
+    <Property Name="invf_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Inv_tbInventarioFisico_invf_UsuarioCrea" FromRole="InventarioFisico" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Inv_tbInventarioFisico_invf_UsuarioModifica" FromRole="InventarioFisico" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Inv_InventarioFisico_prod_Id" FromRole="InventarioFisico" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="tbCategoria">
+    <Key>
+      <PropertyRef Name="cat_Id" />
+    </Key>
+    <Property Name="cat_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cat_Descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cat_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="cat_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cat_UsuarioModifica" Type="Int32" />
+    <Property Name="cat_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Inv_tbCategoria_cat_UsuarioCrea" FromRole="tbCategoria" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Inv_tbCategoria_cat_UsuarioModifica" FromRole="tbCategoria" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbSubCategoria" Relationship="Self.FK_Inv_tbSubCategoria_cat_Id" FromRole="tbCategoria" ToRole="tbSubCategoria" />
+  </EntityType>
+  <EntityType Name="tbEntrada">
+    <Key>
+      <PropertyRef Name="ent_Id" />
+    </Key>
+    <Property Name="ent_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="ent_Existencia" Type="Int32" Nullable="false" />
+    <Property Name="ent_Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="ent_FechaEntrada" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ent_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="ent_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ent_UsuarioModifica" Type="Int32" />
+    <Property Name="ent_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Inv_tbEntrada_ent_UsuarioCrea" FromRole="tbEntrada" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Inv_tbEntrada_ent_UsuarioModifica" FromRole="tbEntrada" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Inv_tbEntrada_prod_Id" FromRole="tbEntrada" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="tbProveedor">
+    <Key>
+      <PropertyRef Name="prov_Id" />
+    </Key>
+    <Property Name="prov_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prov_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prov_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="prov_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="prov_UsuarioModifica" Type="Int32" />
+    <Property Name="prov_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Inv_tbProveedor_prov_UsuarioCrea" FromRole="tbProveedor" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Inv_tbProveedor_prov_UsuarioModifica" FromRole="tbProveedor" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Inv_tbProducto_prov_Id" FromRole="tbProveedor" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="tbSalida">
+    <Key>
+      <PropertyRef Name="sali_Id" />
+    </Key>
+    <Property Name="sali_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="sali_Existencia" Type="Int32" Nullable="false" />
+    <Property Name="sali_Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="sali_FechaEntrada" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sali_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="sali_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sali_UsuarioModifica" Type="Int32" />
+    <Property Name="sali_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_INV_tbSalida_sali_UsuarioCrea" FromRole="tbSalida" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_INV_tbSalida_sali_UsuarioModifica" FromRole="tbSalida" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_INV_tbSaliada_prod_Id" FromRole="tbSalida" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="tbSubCategoria">
+    <Key>
+      <PropertyRef Name="subc_Id" />
+    </Key>
+    <Property Name="subc_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="subc_Descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cat_Id" Type="Int32" Nullable="false" />
+    <Property Name="subc_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="subc_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="subc_UsuarioModifica" Type="Int32" />
+    <Property Name="subc_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Inv_tbSubCategoria_subc_UsuarioCrea" FromRole="tbSubCategoria" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Inv_tbSubCategoria_subc_UsuarioModifica" FromRole="tbSubCategoria" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbCategoria" Relationship="Self.FK_Inv_tbSubCategoria_cat_Id" FromRole="tbSubCategoria" ToRole="tbCategoria" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Inv_tbProducto_subc_Id" FromRole="tbSubCategoria" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="tbCliente">
+    <Key>
+      <PropertyRef Name="clte_Id" />
+    </Key>
+    <Property Name="clte_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clte_Identidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clte_Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="clte_Apellido" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="clte_FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="clte_Sexo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clte_Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clte_Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usu_Id" Type="Int32" Nullable="false" />
+    <Property Name="clte_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="clte_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="clte_UsuarioModifica" Type="Int32" />
+    <Property Name="clte_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbClientes_cli_UsuarioCrea" FromRole="tbCliente" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbClientes_cli_UsuarioModifica" FromRole="tbCliente" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios2" Relationship="Self.FK_Vent_tbClientes_usu_Id" FromRole="tbCliente" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbClienteDireccion" Relationship="Self.FK_Vent_tbClienteDireccion_clie_ID" FromRole="tbCliente" ToRole="tbClienteDireccion" />
+    <NavigationProperty Name="tbFactura" Relationship="Self.FK_Vent_tbFactura_fact_IdCliente" FromRole="tbCliente" ToRole="tbFactura" />
+    <NavigationProperty Name="tbCarrito" Relationship="LateOSModel.FK_Inv_tbCarrito_clte_Id" FromRole="tbCliente" ToRole="tbCarrito" />
+  </EntityType>
+  <EntityType Name="tbClienteDireccion">
+    <Key>
+      <PropertyRef Name="clted_Id" />
+    </Key>
+    <Property Name="clted_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clted_Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clte_Id" Type="Int32" Nullable="false" />
+    <Property Name="ciu_Id" Type="Int32" Nullable="false" />
+    <Property Name="clted_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="clted_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="clted_UsuarioModifica" Type="Int32" />
+    <Property Name="clted_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbClienteDireccion_clid_UsuarioCrea" FromRole="tbClienteDireccion" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbClienteDireccion_clid_UsuarioModifica" FromRole="tbClienteDireccion" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbCiudad" Relationship="Self.FK_Vent_tbClienteDireccion_ciu_Id" FromRole="tbClienteDireccion" ToRole="tbCiudad" />
+    <NavigationProperty Name="tbCliente" Relationship="Self.FK_Vent_tbClienteDireccion_clie_ID" FromRole="tbClienteDireccion" ToRole="tbCliente" />
+  </EntityType>
+  <EntityType Name="tbDevolucion">
+    <Key>
+      <PropertyRef Name="dev_Id" />
+    </Key>
+    <Property Name="dev_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fact_Id" Type="Int32" Nullable="false" />
+    <Property Name="dev_Razon" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dev_Fecha" Type="DateTime" Precision="3" />
+    <Property Name="dev_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="dev_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="dev_UsuarioModifica" Type="Int32" />
+    <Property Name="dev_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbDevolucion_dev_UsuarioCrea" FromRole="tbDevolucion" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbDevolucion_dev_UsuarioModifica" FromRole="tbDevolucion" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbFactura" Relationship="Self.FK_Vent_tbDevolucion_fact_Id" FromRole="tbDevolucion" ToRole="tbFactura" />
+    <NavigationProperty Name="tbDevolucionDetalle" Relationship="Self.FK_Vent_tbDevolucionDetalle_dev_Id" FromRole="tbDevolucion" ToRole="tbDevolucionDetalle" />
+  </EntityType>
+  <EntityType Name="tbDevolucionDetalle">
+    <Key>
+      <PropertyRef Name="devd_Id" />
+    </Key>
+    <Property Name="devd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dev_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Precio" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="devd_Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="devd_Impuesto" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="devd_Descuento" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="devd_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="devd_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="devd_UsuarioModifica" Type="Int32" />
+    <Property Name="devd_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbDevolucionDetalle_devd_UsuarioCrea" FromRole="tbDevolucionDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbDevolucionDetalle_devd_UsuarioModifica" FromRole="tbDevolucionDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbDevolucion" Relationship="Self.FK_Vent_tbDevolucionDetalle_dev_Id" FromRole="tbDevolucionDetalle" ToRole="tbDevolucion" />
+  </EntityType>
+  <EntityType Name="tbEstadoFactura">
+    <Key>
+      <PropertyRef Name="estf_Id" />
+    </Key>
+    <Property Name="estf_Id" Type="Int32" Nullable="false" />
+    <Property Name="estf_Descripcion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="estf_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="estf_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estf_UsuarioModifica" Type="Int32" />
+    <Property Name="estf_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbEstadoFactura_estf_UsuarioCrea" FromRole="tbEstadoFactura" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbEstadoFactura_estf_UsuarioModifica" FromRole="tbEstadoFactura" ToRole="tbUsuarios" />
+  </EntityType>
+  <EntityType Name="tbEstadoTransaccion">
+    <Key>
+      <PropertyRef Name="estt_Id" />
+    </Key>
+    <Property Name="estt_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="estt_Descripcion" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="estt_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="estt_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estt_UsuarioModifica" Type="Int32" />
+    <Property Name="estt_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbEstadoTransaccion_estt_UsuarioCrea" FromRole="tbEstadoTransaccion" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbEstadoTransaccion_estt_UsuarioModifica" FromRole="tbEstadoTransaccion" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbTransaccionDetalle" Relationship="LateOSModel.FK_Vent_tbTransaccionDetalle_estt_Id" FromRole="tbEstadoTransaccion" ToRole="tbTransaccionDetalle" />
+  </EntityType>
+  <EntityType Name="tbFactura">
+    <Key>
+      <PropertyRef Name="fact_Id" />
+    </Key>
+    <Property Name="fact_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fact_Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fact_Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="clte_Id" Type="Int32" Nullable="false" />
+    <Property Name="tipp_Id" Type="Int32" Nullable="false" />
+    <Property Name="forp_Id" Type="Int32" Nullable="false" />
+    <Property Name="fact_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="fact_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fact_UsuarioModifica" Type="Int32" />
+    <Property Name="fact_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbFactura_fact_UsuarioCrea" FromRole="tbFactura" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbFactura_fact_UsuarioModifica" FromRole="tbFactura" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbTipoPago" Relationship="Self.FK_Vent_tbFactura_fact_IdPago" FromRole="tbFactura" ToRole="tbTipoPago" />
+    <NavigationProperty Name="tbCliente" Relationship="Self.FK_Vent_tbFactura_fact_IdCliente" FromRole="tbFactura" ToRole="tbCliente" />
+    <NavigationProperty Name="tbDevolucion" Relationship="Self.FK_Vent_tbDevolucion_fact_Id" FromRole="tbFactura" ToRole="tbDevolucion" />
+    <NavigationProperty Name="tbFormaPago" Relationship="Self.FK_Vent_tbFactura_fact_IdFormaPago" FromRole="tbFactura" ToRole="tbFormaPago" />
+    <NavigationProperty Name="tbFacturaDetalle" Relationship="Self.FK_Vent_tbFacturaDetalle_fact_IdFact" FromRole="tbFactura" ToRole="tbFacturaDetalle" />
+    <NavigationProperty Name="tbTransaccionDetalle" Relationship="Self.FK_Vent_tbTransaccionDetalle_fact_Id" FromRole="tbFactura" ToRole="tbTransaccionDetalle" />
+  </EntityType>
+  <EntityType Name="tbFacturaDetalle">
+    <Key>
+      <PropertyRef Name="facd_Id" />
+    </Key>
+    <Property Name="facd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fact_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="facd_Cantidad" Type="Int32" />
+    <Property Name="prod_Precio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="facd_Impuesto" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="facd_Descuento" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="facd_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="facd_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="facd_UsuarioModifica" Type="Int32" />
+    <Property Name="facd_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbFacturaDetalle_facd_UsuarioCrea" FromRole="tbFacturaDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbFacturaDetalle_facd_UsuarioModifica" FromRole="tbFacturaDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbFactura" Relationship="Self.FK_Vent_tbFacturaDetalle_fact_IdFact" FromRole="tbFacturaDetalle" ToRole="tbFactura" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Vent_tbFacturaDetalle_prod_Id" FromRole="tbFacturaDetalle" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="tbFormaPago">
+    <Key>
+      <PropertyRef Name="forp_Id" />
+    </Key>
+    <Property Name="forp_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="forp_Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="forp_UsuarioCrea" Type="Int32" />
+    <Property Name="forp_FechaCrea" Type="DateTime" Precision="3" />
+    <Property Name="forp_UsuarioModifica" Type="Int32" />
+    <Property Name="forp_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbFormaPago_forp_UsuarioCrea" FromRole="tbFormaPago" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbFormaPago_forp_UsuarioModifica" FromRole="tbFormaPago" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbFactura" Relationship="Self.FK_Vent_tbFactura_fact_IdFormaPago" FromRole="tbFormaPago" ToRole="tbFactura" />
+  </EntityType>
+  <EntityType Name="tbListadoPrecio">
+    <Key>
+      <PropertyRef Name="lip_Id" />
+    </Key>
+    <Property Name="lip_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lip_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lip_Prioridad" Type="Int32" Nullable="false" />
+    <Property Name="lip_EsActivo" Type="Boolean" Nullable="false" />
+    <Property Name="lip_FechaInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lip_FechaFin" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lip_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="lip_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lip_UsuarioModifica" Type="Int32" />
+    <Property Name="lip_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioCrea" FromRole="tbListadoPrecio" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioModifica" FromRole="tbListadoPrecio" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbListadoPrecioDetalle" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lip_Id" FromRole="tbListadoPrecio" ToRole="tbListadoPrecioDetalle" />
+  </EntityType>
+  <EntityType Name="tbListadoPrecioDetalle">
+    <Key>
+      <PropertyRef Name="lipd_Id" />
+    </Key>
+    <Property Name="lipd_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lip_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="tipd_Id" Type="Int32" />
+    <Property Name="lipd_Precio" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="lipd_ISV" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="lipd_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="lipd_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lipd_UsuarioModifica" Type="Int32" />
+    <Property Name="lipd_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioCrea" FromRole="tbListadoPrecioDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioModifica" FromRole="tbListadoPrecioDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbTipoDescuento" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_tipd_Id" FromRole="tbListadoPrecioDetalle" ToRole="tbTipoDescuento" />
+    <NavigationProperty Name="tbListadoPrecio" Relationship="Self.FK_Vent_tbListadoPrecioDetalle_lip_Id" FromRole="tbListadoPrecioDetalle" ToRole="tbListadoPrecio" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Vent_tbListadoPrecioDetalle_prod_Id" FromRole="tbListadoPrecioDetalle" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="tbTransaccionDetalle">
+    <Key>
+      <PropertyRef Name="trad_Id" />
+    </Key>
+    <Property Name="trad_Id" Type="Int32" Nullable="false" />
+    <Property Name="trad_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="trad_Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fact_Id" Type="Int32" Nullable="false" />
+    <Property Name="trad_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="trad_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="trad_UsuarioModifica" Type="Int32" />
+    <Property Name="trad_FechaModifica" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbUsuarios" Relationship="Self.FK_Vent_tbTransaccionDetalle_trad_UsuarioCrea" FromRole="tbTransaccionDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="Self.FK_Vent_tbTransaccionDetalle_trad_UsuarioModifica" FromRole="tbTransaccionDetalle" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbFactura" Relationship="Self.FK_Vent_tbTransaccionDetalle_fact_Id" FromRole="tbTransaccionDetalle" ToRole="tbFactura" />
+    <Property Name="estt_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tbEstadoTransaccion" Relationship="LateOSModel.FK_Vent_tbTransaccionDetalle_estt_Id" FromRole="tbTransaccionDetalle" ToRole="tbEstadoTransaccion" />
+  </EntityType>
+  <Association Name="FK_Gral_tbCiudad_ciu_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbCiudad" Type="Self.tbCiudad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbCiudad">
+        <PropertyRef Name="ciu_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbCiudad_ciu_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbCiudad" Type="Self.tbCiudad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbCiudad">
+        <PropertyRef Name="ciu_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleadoCargo_empc_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbEmpleadoCargo" Type="Self.tbEmpleadoCargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleadoCargo">
+        <PropertyRef Name="empc_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleadoCargo_empc_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbEmpleadoCargo" Type="Self.tbEmpleadoCargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleadoCargo">
+        <PropertyRef Name="empc_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleadoDepartamento_empd_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbEmpleadoDepartamento" Type="Self.tbEmpleadoDepartamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleadoDepartamento">
+        <PropertyRef Name="empd_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleadoDepartamento_empd_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbEmpleadoDepartamento" Type="Self.tbEmpleadoDepartamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleadoDepartamento">
+        <PropertyRef Name="empd_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleados_emp_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbEmpleado" Type="Self.tbEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleado">
+        <PropertyRef Name="emp_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleados_emp_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbEmpleado" Type="Self.tbEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleado">
+        <PropertyRef Name="emp_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleados_usu_Id">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbEmpleado" Type="Self.tbEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleado">
+        <PropertyRef Name="usu_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbPais_pais_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbPais" Type="Self.tbPais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbPais">
+        <PropertyRef Name="pais_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbPais_pais_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbPais" Type="Self.tbPais" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbPais">
+        <PropertyRef Name="pais_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbTipoDescuento_tipd_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbTipoDescuento" Type="Self.tbTipoDescuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbTipoDescuento">
+        <PropertyRef Name="tipd_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbTipoDescuento_tipd_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbTipoDescuento" Type="Self.tbTipoDescuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbTipoDescuento">
+        <PropertyRef Name="tipd_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbTipoPago_tipp_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbTipoPago" Type="Self.tbTipoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbTipoPago">
+        <PropertyRef Name="tipp_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbTipoPago_tipp_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbTipoPago" Type="Self.tbTipoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbTipoPago">
+        <PropertyRef Name="tipp_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbCategoria_cat_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbCategoria" Type="Self.tbCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbCategoria">
+        <PropertyRef Name="cat_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbCategoria_cat_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbCategoria" Type="Self.tbCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbCategoria">
+        <PropertyRef Name="cat_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbEntrada_ent_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbEntrada" Type="Self.tbEntrada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEntrada">
+        <PropertyRef Name="ent_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbEntrada_ent_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbEntrada" Type="Self.tbEntrada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEntrada">
+        <PropertyRef Name="ent_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbInventarioFisico_invf_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="InventarioFisico" Type="Self.InventarioFisico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="InventarioFisico">
+        <PropertyRef Name="invf_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbInventarioFisico_invf_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="InventarioFisico" Type="Self.InventarioFisico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="InventarioFisico">
+        <PropertyRef Name="invf_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProveedor_prov_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbProveedor" Type="Self.tbProveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbProveedor">
+        <PropertyRef Name="prov_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProveedor_prov_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbProveedor" Type="Self.tbProveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbProveedor">
+        <PropertyRef Name="prov_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_tbSalida_sali_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbSalida" Type="Self.tbSalida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbSalida">
+        <PropertyRef Name="sali_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_tbSalida_sali_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbSalida" Type="Self.tbSalida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbSalida">
+        <PropertyRef Name="sali_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbSubCategoria_subc_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbSubCategoria" Type="Self.tbSubCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbSubCategoria">
+        <PropertyRef Name="subc_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbSubCategoria_subc_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbSubCategoria" Type="Self.tbSubCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbSubCategoria">
+        <PropertyRef Name="subc_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbClienteDireccion_clid_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbClienteDireccion" Type="Self.tbClienteDireccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbClienteDireccion">
+        <PropertyRef Name="clted_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbClienteDireccion_clid_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbClienteDireccion" Type="Self.tbClienteDireccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbClienteDireccion">
+        <PropertyRef Name="clted_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbClientes_cli_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbCliente" Type="Self.tbCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbCliente">
+        <PropertyRef Name="clte_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbClientes_cli_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbCliente" Type="Self.tbCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbCliente">
+        <PropertyRef Name="clte_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbClientes_usu_Id">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbCliente" Type="Self.tbCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbCliente">
+        <PropertyRef Name="usu_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbDevolucion_dev_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbDevolucion" Type="Self.tbDevolucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbDevolucion">
+        <PropertyRef Name="dev_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbDevolucion_dev_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbDevolucion" Type="Self.tbDevolucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbDevolucion">
+        <PropertyRef Name="dev_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbDevolucionDetalle_devd_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbDevolucionDetalle" Type="Self.tbDevolucionDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbDevolucionDetalle">
+        <PropertyRef Name="devd_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbDevolucionDetalle_devd_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbDevolucionDetalle" Type="Self.tbDevolucionDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbDevolucionDetalle">
+        <PropertyRef Name="devd_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbEstadoFactura_estf_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbEstadoFactura" Type="Self.tbEstadoFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEstadoFactura">
+        <PropertyRef Name="estf_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbEstadoFactura_estf_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbEstadoFactura" Type="Self.tbEstadoFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEstadoFactura">
+        <PropertyRef Name="estf_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbEstadoTransaccion_estt_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbEstadoTransaccion" Type="Self.tbEstadoTransaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEstadoTransaccion">
+        <PropertyRef Name="estt_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbEstadoTransaccion_estt_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbEstadoTransaccion" Type="Self.tbEstadoTransaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbEstadoTransaccion">
+        <PropertyRef Name="estt_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFactura_fact_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbFactura">
+        <PropertyRef Name="fact_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFactura_fact_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbFactura">
+        <PropertyRef Name="fact_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFacturaDetalle_facd_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbFacturaDetalle" Type="Self.tbFacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbFacturaDetalle">
+        <PropertyRef Name="facd_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFacturaDetalle_facd_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbFacturaDetalle" Type="Self.tbFacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbFacturaDetalle">
+        <PropertyRef Name="facd_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFormaPago_forp_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbFormaPago" Type="Self.tbFormaPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbFormaPago">
+        <PropertyRef Name="forp_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFormaPago_forp_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbFormaPago" Type="Self.tbFormaPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbFormaPago">
+        <PropertyRef Name="forp_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbListadoPrecioDetalle_lip_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbListadoPrecio" Type="Self.tbListadoPrecio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbListadoPrecio">
+        <PropertyRef Name="lip_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbListadoPrecioDetalle_lip_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbListadoPrecio" Type="Self.tbListadoPrecio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbListadoPrecio">
+        <PropertyRef Name="lip_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbListadoPrecioDetalle" Type="Self.tbListadoPrecioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbListadoPrecioDetalle">
+        <PropertyRef Name="lipd_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbListadoPrecioDetalle" Type="Self.tbListadoPrecioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbListadoPrecioDetalle">
+        <PropertyRef Name="lipd_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbTransaccionDetalle_trad_UsuarioCrea">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="1" />
+    <End Role="tbTransaccionDetalle" Type="Self.tbTransaccionDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbTransaccionDetalle">
+        <PropertyRef Name="trad_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbTransaccionDetalle_trad_UsuarioModifica">
+    <End Role="tbUsuarios" Type="Self.tbUsuarios" Multiplicity="0..1" />
+    <End Role="tbTransaccionDetalle" Type="Self.tbTransaccionDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbTransaccionDetalle">
+        <PropertyRef Name="trad_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbCiudad_Id_Pais">
+    <End Role="tbPais" Type="Self.tbPais" Multiplicity="1" />
+    <End Role="tbCiudad" Type="Self.tbCiudad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbPais">
+        <PropertyRef Name="pais_Id" />
+      </Principal>
+      <Dependent Role="tbCiudad">
+        <PropertyRef Name="pais_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbClienteDireccion_ciu_Id">
+    <End Role="tbCiudad" Type="Self.tbCiudad" Multiplicity="1" />
+    <End Role="tbClienteDireccion" Type="Self.tbClienteDireccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCiudad">
+        <PropertyRef Name="ciu_Id" />
+      </Principal>
+      <Dependent Role="tbClienteDireccion">
+        <PropertyRef Name="ciu_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleados_IdCargo">
+    <End Role="tbEmpleadoCargo" Type="Self.tbEmpleadoCargo" Multiplicity="1" />
+    <End Role="tbEmpleado" Type="Self.tbEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEmpleadoCargo">
+        <PropertyRef Name="empc_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleado">
+        <PropertyRef Name="empc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gral_tbEmpleadoCargo_empd_Id">
+    <End Role="tbEmpleadoDepartamento" Type="Self.tbEmpleadoDepartamento" Multiplicity="1" />
+    <End Role="tbEmpleadoCargo" Type="Self.tbEmpleadoCargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEmpleadoDepartamento">
+        <PropertyRef Name="empd_Id" />
+      </Principal>
+      <Dependent Role="tbEmpleadoCargo">
+        <PropertyRef Name="empd_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbListadoPrecioDetalle_tipd_Id">
+    <End Role="tbTipoDescuento" Type="Self.tbTipoDescuento" Multiplicity="0..1" />
+    <End Role="tbListadoPrecioDetalle" Type="Self.tbListadoPrecioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbTipoDescuento">
+        <PropertyRef Name="tipd_Id" />
+      </Principal>
+      <Dependent Role="tbListadoPrecioDetalle">
+        <PropertyRef Name="tipd_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFactura_fact_IdPago">
+    <End Role="tbTipoPago" Type="Self.tbTipoPago" Multiplicity="1" />
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbTipoPago">
+        <PropertyRef Name="tipp_Id" />
+      </Principal>
+      <Dependent Role="tbFactura">
+        <PropertyRef Name="tipp_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbSubCategoria_cat_Id">
+    <End Role="tbCategoria" Type="Self.tbCategoria" Multiplicity="1" />
+    <End Role="tbSubCategoria" Type="Self.tbSubCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCategoria">
+        <PropertyRef Name="cat_Id" />
+      </Principal>
+      <Dependent Role="tbSubCategoria">
+        <PropertyRef Name="cat_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbClienteDireccion_clie_ID">
+    <End Role="tbCliente" Type="Self.tbCliente" Multiplicity="1" />
+    <End Role="tbClienteDireccion" Type="Self.tbClienteDireccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCliente">
+        <PropertyRef Name="clte_Id" />
+      </Principal>
+      <Dependent Role="tbClienteDireccion">
+        <PropertyRef Name="clte_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFactura_fact_IdCliente">
+    <End Role="tbCliente" Type="Self.tbCliente" Multiplicity="1" />
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCliente">
+        <PropertyRef Name="clte_Id" />
+      </Principal>
+      <Dependent Role="tbFactura">
+        <PropertyRef Name="clte_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbDevolucion_fact_Id">
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="1" />
+    <End Role="tbDevolucion" Type="Self.tbDevolucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbFactura">
+        <PropertyRef Name="fact_Id" />
+      </Principal>
+      <Dependent Role="tbDevolucion">
+        <PropertyRef Name="fact_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbDevolucionDetalle_dev_Id">
+    <End Role="tbDevolucion" Type="Self.tbDevolucion" Multiplicity="1" />
+    <End Role="tbDevolucionDetalle" Type="Self.tbDevolucionDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbDevolucion">
+        <PropertyRef Name="dev_Id" />
+      </Principal>
+      <Dependent Role="tbDevolucionDetalle">
+        <PropertyRef Name="dev_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFactura_fact_IdFormaPago">
+    <End Role="tbFormaPago" Type="Self.tbFormaPago" Multiplicity="1" />
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbFormaPago">
+        <PropertyRef Name="forp_Id" />
+      </Principal>
+      <Dependent Role="tbFactura">
+        <PropertyRef Name="forp_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFacturaDetalle_fact_IdFact">
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="1" />
+    <End Role="tbFacturaDetalle" Type="Self.tbFacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbFactura">
+        <PropertyRef Name="fact_Id" />
+      </Principal>
+      <Dependent Role="tbFacturaDetalle">
+        <PropertyRef Name="fact_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbTransaccionDetalle_fact_Id">
+    <End Role="tbFactura" Type="Self.tbFactura" Multiplicity="1" />
+    <End Role="tbTransaccionDetalle" Type="Self.tbTransaccionDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbFactura">
+        <PropertyRef Name="fact_Id" />
+      </Principal>
+      <Dependent Role="tbTransaccionDetalle">
+        <PropertyRef Name="fact_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbListadoPrecioDetalle_lip_Id">
+    <End Role="tbListadoPrecio" Type="Self.tbListadoPrecio" Multiplicity="1" />
+    <End Role="tbListadoPrecioDetalle" Type="Self.tbListadoPrecioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbListadoPrecio">
+        <PropertyRef Name="lip_Id" />
+      </Principal>
+      <Dependent Role="tbListadoPrecioDetalle">
+        <PropertyRef Name="lip_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LateOSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbUsuarios" EntityType="Self.tbUsuarios" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="tbCiudad" EntityType="Self.tbCiudad" />
+    <EntitySet Name="tbEmpleado" EntityType="Self.tbEmpleado" />
+    <EntitySet Name="tbEmpleadoCargo" EntityType="Self.tbEmpleadoCargo" />
+    <EntitySet Name="tbEmpleadoDepartamento" EntityType="Self.tbEmpleadoDepartamento" />
+    <EntitySet Name="tbPais" EntityType="Self.tbPais" />
+    <EntitySet Name="tbTipoDescuento" EntityType="Self.tbTipoDescuento" />
+    <EntitySet Name="tbTipoPago" EntityType="Self.tbTipoPago" />
+    <EntitySet Name="InventarioFisico" EntityType="Self.InventarioFisico" />
+    <EntitySet Name="tbCategoria" EntityType="Self.tbCategoria" />
+    <EntitySet Name="tbEntrada" EntityType="Self.tbEntrada" />
+    <EntitySet Name="tbProveedor" EntityType="Self.tbProveedor" />
+    <EntitySet Name="tbSalida" EntityType="Self.tbSalida" />
+    <EntitySet Name="tbSubCategoria" EntityType="Self.tbSubCategoria" />
+    <EntitySet Name="tbCliente" EntityType="Self.tbCliente" />
+    <EntitySet Name="tbClienteDireccion" EntityType="Self.tbClienteDireccion" />
+    <EntitySet Name="tbDevolucion" EntityType="Self.tbDevolucion" />
+    <EntitySet Name="tbDevolucionDetalle" EntityType="Self.tbDevolucionDetalle" />
+    <EntitySet Name="tbEstadoFactura" EntityType="Self.tbEstadoFactura" />
+    <EntitySet Name="tbEstadoTransaccion" EntityType="Self.tbEstadoTransaccion" />
+    <EntitySet Name="tbFactura" EntityType="Self.tbFactura" />
+    <EntitySet Name="tbFacturaDetalle" EntityType="Self.tbFacturaDetalle" />
+    <EntitySet Name="tbFormaPago" EntityType="Self.tbFormaPago" />
+    <EntitySet Name="tbListadoPrecio" EntityType="Self.tbListadoPrecio" />
+    <EntitySet Name="tbListadoPrecioDetalle" EntityType="Self.tbListadoPrecioDetalle" />
+    <EntitySet Name="tbTransaccionDetalle" EntityType="Self.tbTransaccionDetalle" />
+    <AssociationSet Name="FK_Gral_tbCiudad_ciu_UsuarioCrea" Association="Self.FK_Gral_tbCiudad_ciu_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbCiudad" EntitySet="tbCiudad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbCiudad_ciu_UsuarioModifica" Association="Self.FK_Gral_tbCiudad_ciu_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbCiudad" EntitySet="tbCiudad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleadoCargo_empc_UsuarioCrea" Association="Self.FK_Gral_tbEmpleadoCargo_empc_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEmpleadoCargo" EntitySet="tbEmpleadoCargo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleadoCargo_empc_UsuarioModifica" Association="Self.FK_Gral_tbEmpleadoCargo_empc_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEmpleadoCargo" EntitySet="tbEmpleadoCargo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleadoDepartamento_empd_UsuarioCrea" Association="Self.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEmpleadoDepartamento" EntitySet="tbEmpleadoDepartamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleadoDepartamento_empd_UsuarioModifica" Association="Self.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEmpleadoDepartamento" EntitySet="tbEmpleadoDepartamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleados_emp_UsuarioCrea" Association="Self.FK_Gral_tbEmpleados_emp_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEmpleado" EntitySet="tbEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleados_emp_UsuarioModifica" Association="Self.FK_Gral_tbEmpleados_emp_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEmpleado" EntitySet="tbEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleados_usu_Id" Association="Self.FK_Gral_tbEmpleados_usu_Id">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEmpleado" EntitySet="tbEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbPais_pais_UsuarioCrea" Association="Self.FK_Gral_tbPais_pais_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbPais" EntitySet="tbPais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbPais_pais_UsuarioModifica" Association="Self.FK_Gral_tbPais_pais_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbPais" EntitySet="tbPais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbTipoDescuento_tipd_UsuarioCrea" Association="Self.FK_Gral_tbTipoDescuento_tipd_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbTipoDescuento" EntitySet="tbTipoDescuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbTipoDescuento_tipd_UsuarioModifica" Association="Self.FK_Gral_tbTipoDescuento_tipd_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbTipoDescuento" EntitySet="tbTipoDescuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbTipoPago_tipp_UsuarioCrea" Association="Self.FK_Gral_tbTipoPago_tipp_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbTipoPago" EntitySet="tbTipoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbTipoPago_tipp_UsuarioModifica" Association="Self.FK_Gral_tbTipoPago_tipp_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbTipoPago" EntitySet="tbTipoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbCategoria_cat_UsuarioCrea" Association="Self.FK_Inv_tbCategoria_cat_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbCategoria" EntitySet="tbCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbCategoria_cat_UsuarioModifica" Association="Self.FK_Inv_tbCategoria_cat_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbCategoria" EntitySet="tbCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbEntrada_ent_UsuarioCrea" Association="Self.FK_Inv_tbEntrada_ent_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEntrada" EntitySet="tbEntrada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbEntrada_ent_UsuarioModifica" Association="Self.FK_Inv_tbEntrada_ent_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEntrada" EntitySet="tbEntrada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbInventarioFisico_invf_UsuarioCrea" Association="Self.FK_Inv_tbInventarioFisico_invf_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="InventarioFisico" EntitySet="InventarioFisico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbInventarioFisico_invf_UsuarioModifica" Association="Self.FK_Inv_tbInventarioFisico_invf_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="InventarioFisico" EntitySet="InventarioFisico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProveedor_prov_UsuarioCrea" Association="Self.FK_Inv_tbProveedor_prov_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbProveedor" EntitySet="tbProveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProveedor_prov_UsuarioModifica" Association="Self.FK_Inv_tbProveedor_prov_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbProveedor" EntitySet="tbProveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_tbSalida_sali_UsuarioCrea" Association="Self.FK_INV_tbSalida_sali_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbSalida" EntitySet="tbSalida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_tbSalida_sali_UsuarioModifica" Association="Self.FK_INV_tbSalida_sali_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbSalida" EntitySet="tbSalida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbSubCategoria_subc_UsuarioCrea" Association="Self.FK_Inv_tbSubCategoria_subc_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbSubCategoria" EntitySet="tbSubCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbSubCategoria_subc_UsuarioModifica" Association="Self.FK_Inv_tbSubCategoria_subc_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbSubCategoria" EntitySet="tbSubCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbClienteDireccion_clid_UsuarioCrea" Association="Self.FK_Vent_tbClienteDireccion_clid_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbClienteDireccion" EntitySet="tbClienteDireccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbClienteDireccion_clid_UsuarioModifica" Association="Self.FK_Vent_tbClienteDireccion_clid_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbClienteDireccion" EntitySet="tbClienteDireccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbClientes_cli_UsuarioCrea" Association="Self.FK_Vent_tbClientes_cli_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbCliente" EntitySet="tbCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbClientes_cli_UsuarioModifica" Association="Self.FK_Vent_tbClientes_cli_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbCliente" EntitySet="tbCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbClientes_usu_Id" Association="Self.FK_Vent_tbClientes_usu_Id">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbCliente" EntitySet="tbCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbDevolucion_dev_UsuarioCrea" Association="Self.FK_Vent_tbDevolucion_dev_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbDevolucion" EntitySet="tbDevolucion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbDevolucion_dev_UsuarioModifica" Association="Self.FK_Vent_tbDevolucion_dev_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbDevolucion" EntitySet="tbDevolucion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbDevolucionDetalle_devd_UsuarioCrea" Association="Self.FK_Vent_tbDevolucionDetalle_devd_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbDevolucionDetalle" EntitySet="tbDevolucionDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbDevolucionDetalle_devd_UsuarioModifica" Association="Self.FK_Vent_tbDevolucionDetalle_devd_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbDevolucionDetalle" EntitySet="tbDevolucionDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbEstadoFactura_estf_UsuarioCrea" Association="Self.FK_Vent_tbEstadoFactura_estf_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEstadoFactura" EntitySet="tbEstadoFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbEstadoFactura_estf_UsuarioModifica" Association="Self.FK_Vent_tbEstadoFactura_estf_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEstadoFactura" EntitySet="tbEstadoFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbEstadoTransaccion_estt_UsuarioCrea" Association="Self.FK_Vent_tbEstadoTransaccion_estt_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEstadoTransaccion" EntitySet="tbEstadoTransaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbEstadoTransaccion_estt_UsuarioModifica" Association="Self.FK_Vent_tbEstadoTransaccion_estt_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbEstadoTransaccion" EntitySet="tbEstadoTransaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFactura_fact_UsuarioCrea" Association="Self.FK_Vent_tbFactura_fact_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbFactura" EntitySet="tbFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFactura_fact_UsuarioModifica" Association="Self.FK_Vent_tbFactura_fact_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbFactura" EntitySet="tbFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFacturaDetalle_facd_UsuarioCrea" Association="Self.FK_Vent_tbFacturaDetalle_facd_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbFacturaDetalle" EntitySet="tbFacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFacturaDetalle_facd_UsuarioModifica" Association="Self.FK_Vent_tbFacturaDetalle_facd_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbFacturaDetalle" EntitySet="tbFacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFormaPago_forp_UsuarioCrea" Association="Self.FK_Vent_tbFormaPago_forp_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbFormaPago" EntitySet="tbFormaPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFormaPago_forp_UsuarioModifica" Association="Self.FK_Vent_tbFormaPago_forp_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbFormaPago" EntitySet="tbFormaPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbListadoPrecioDetalle_lip_UsuarioCrea" Association="Self.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbListadoPrecio" EntitySet="tbListadoPrecio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbListadoPrecioDetalle_lip_UsuarioModifica" Association="Self.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbListadoPrecio" EntitySet="tbListadoPrecio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioCrea" Association="Self.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbListadoPrecioDetalle" EntitySet="tbListadoPrecioDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioModifica" Association="Self.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbListadoPrecioDetalle" EntitySet="tbListadoPrecioDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbTransaccionDetalle_trad_UsuarioCrea" Association="Self.FK_Vent_tbTransaccionDetalle_trad_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbTransaccionDetalle" EntitySet="tbTransaccionDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbTransaccionDetalle_trad_UsuarioModifica" Association="Self.FK_Vent_tbTransaccionDetalle_trad_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbTransaccionDetalle" EntitySet="tbTransaccionDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbCiudad_Id_Pais" Association="Self.FK_Gral_tbCiudad_Id_Pais">
+      <End Role="tbPais" EntitySet="tbPais" />
+      <End Role="tbCiudad" EntitySet="tbCiudad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbClienteDireccion_ciu_Id" Association="Self.FK_Vent_tbClienteDireccion_ciu_Id">
+      <End Role="tbCiudad" EntitySet="tbCiudad" />
+      <End Role="tbClienteDireccion" EntitySet="tbClienteDireccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleados_IdCargo" Association="Self.FK_Gral_tbEmpleados_IdCargo">
+      <End Role="tbEmpleadoCargo" EntitySet="tbEmpleadoCargo" />
+      <End Role="tbEmpleado" EntitySet="tbEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gral_tbEmpleadoCargo_empd_Id" Association="Self.FK_Gral_tbEmpleadoCargo_empd_Id">
+      <End Role="tbEmpleadoDepartamento" EntitySet="tbEmpleadoDepartamento" />
+      <End Role="tbEmpleadoCargo" EntitySet="tbEmpleadoCargo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbListadoPrecioDetalle_tipd_Id" Association="Self.FK_Vent_tbListadoPrecioDetalle_tipd_Id">
+      <End Role="tbTipoDescuento" EntitySet="tbTipoDescuento" />
+      <End Role="tbListadoPrecioDetalle" EntitySet="tbListadoPrecioDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFactura_fact_IdPago" Association="Self.FK_Vent_tbFactura_fact_IdPago">
+      <End Role="tbTipoPago" EntitySet="tbTipoPago" />
+      <End Role="tbFactura" EntitySet="tbFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbSubCategoria_cat_Id" Association="Self.FK_Inv_tbSubCategoria_cat_Id">
+      <End Role="tbCategoria" EntitySet="tbCategoria" />
+      <End Role="tbSubCategoria" EntitySet="tbSubCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbClienteDireccion_clie_ID" Association="Self.FK_Vent_tbClienteDireccion_clie_ID">
+      <End Role="tbCliente" EntitySet="tbCliente" />
+      <End Role="tbClienteDireccion" EntitySet="tbClienteDireccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFactura_fact_IdCliente" Association="Self.FK_Vent_tbFactura_fact_IdCliente">
+      <End Role="tbCliente" EntitySet="tbCliente" />
+      <End Role="tbFactura" EntitySet="tbFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbDevolucion_fact_Id" Association="Self.FK_Vent_tbDevolucion_fact_Id">
+      <End Role="tbFactura" EntitySet="tbFactura" />
+      <End Role="tbDevolucion" EntitySet="tbDevolucion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbDevolucionDetalle_dev_Id" Association="Self.FK_Vent_tbDevolucionDetalle_dev_Id">
+      <End Role="tbDevolucion" EntitySet="tbDevolucion" />
+      <End Role="tbDevolucionDetalle" EntitySet="tbDevolucionDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFactura_fact_IdFormaPago" Association="Self.FK_Vent_tbFactura_fact_IdFormaPago">
+      <End Role="tbFormaPago" EntitySet="tbFormaPago" />
+      <End Role="tbFactura" EntitySet="tbFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFacturaDetalle_fact_IdFact" Association="Self.FK_Vent_tbFacturaDetalle_fact_IdFact">
+      <End Role="tbFactura" EntitySet="tbFactura" />
+      <End Role="tbFacturaDetalle" EntitySet="tbFacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbTransaccionDetalle_fact_Id" Association="Self.FK_Vent_tbTransaccionDetalle_fact_Id">
+      <End Role="tbFactura" EntitySet="tbFactura" />
+      <End Role="tbTransaccionDetalle" EntitySet="tbTransaccionDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbListadoPrecioDetalle_lip_Id" Association="Self.FK_Vent_tbListadoPrecioDetalle_lip_Id">
+      <End Role="tbListadoPrecio" EntitySet="tbListadoPrecio" />
+      <End Role="tbListadoPrecioDetalle" EntitySet="tbListadoPrecioDetalle" />
+    </AssociationSet>
+    <FunctionImport Name="UDP_Gral_tbCiudad_Insert">
+      <Parameter Name="ciu_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="pais_Id" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbCiudad_Update" ReturnType="Collection(LateOSModel.UDP_Gral_tbCiudad_Update_Result)">
+      <Parameter Name="ciu_Id" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="pais_Id" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="ciu_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbEmpleado_Insert" ReturnType="Collection(LateOSModel.UDP_Gral_tbEmpleado_Insert_Result)">
+      <Parameter Name="emp_Identidad" Mode="In" Type="String" />
+      <Parameter Name="emp_Nombres" Mode="In" Type="String" />
+      <Parameter Name="emp_Apellido" Mode="In" Type="String" />
+      <Parameter Name="emp_FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_Sexo" Mode="In" Type="String" />
+      <Parameter Name="emp_CorreoElectronico" Mode="In" Type="String" />
+      <Parameter Name="emp_Telefono" Mode="In" Type="String" />
+      <Parameter Name="emp_FechaIngreso" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_EsActivo" Mode="In" Type="Boolean" />
+      <Parameter Name="empc_id" Mode="In" Type="Int32" />
+      <Parameter Name="usu_id" Mode="In" Type="Int32" />
+      <Parameter Name="emp_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="emp_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbEmpleado_Update" ReturnType="Collection(LateOSModel.UDP_Gral_tbEmpleado_Update_Result)">
+      <Parameter Name="emp_Id" Mode="In" Type="Int32" />
+      <Parameter Name="emp_Identidad" Mode="In" Type="String" />
+      <Parameter Name="emp_Nombres" Mode="In" Type="String" />
+      <Parameter Name="emp_Apellido" Mode="In" Type="String" />
+      <Parameter Name="emp_FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_Sexo" Mode="In" Type="String" />
+      <Parameter Name="emp_CorreoElectronico" Mode="In" Type="String" />
+      <Parameter Name="emp_Telefono" Mode="In" Type="String" />
+      <Parameter Name="emp_FechaIngreso" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_EsActivo" Mode="In" Type="Boolean" />
+      <Parameter Name="empc_id" Mode="In" Type="Int32" />
+      <Parameter Name="usu_id" Mode="In" Type="Int32" />
+      <Parameter Name="emp_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="emp_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="emp_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="emp_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbEmpleadoCargo_Insert" ReturnType="Collection(LateOSModel.UDP_Gral_tbEmpleadoCargo_Insert_Result)">
+      <Parameter Name="empc_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="empd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="empc_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="empc_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbEmpleadoCargo_Update" ReturnType="Collection(LateOSModel.UDP_Gral_tbEmpleadoCargo_Update_Result)">
+      <Parameter Name="empc_Id" Mode="In" Type="Int32" />
+      <Parameter Name="empc_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="empd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="empc_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="empc_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbEmpleadoDepartamento_Insert" ReturnType="Collection(LateOSModel.UDP_Gral_tbEmpleadoDepartamento_Insert_Result)">
+      <Parameter Name="empd_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="empd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="empd_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbEmpleadoDepartamento_Update" ReturnType="Collection(LateOSModel.UDP_Gral_tbEmpleadoDepartamento_Update_Result)">
+      <Parameter Name="empd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="empd_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="empd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="empd_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="empd_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="empd_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbPais_Insert" ReturnType="Collection(LateOSModel.UDP_Gral_tbPais_Insert_Result)">
+      <Parameter Name="pais_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="pais_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="pais_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbPais_Update" ReturnType="Collection(LateOSModel.UDP_Gral_tbPais_Update_Result)">
+      <Parameter Name="pais_Id" Mode="In" Type="Int32" />
+      <Parameter Name="pais_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="pais_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="pais_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="pais_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="pais_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbTipoDescuento_Insert" ReturnType="Collection(LateOSModel.UDP_Gral_tbTipoDescuento_Insert_Result)">
+      <Parameter Name="tipd_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="tipd_Porcentaje" Mode="In" Type="Decimal" />
+      <Parameter Name="tipd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="tipd_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbTipoDescuento_Update" ReturnType="Collection(LateOSModel.UDP_Gral_tbTipoDescuento_Update_Result)">
+      <Parameter Name="tipd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="tipd_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="tipd_Porcentaje" Mode="In" Type="Decimal" />
+      <Parameter Name="tipd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="tipd_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="tipd_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="tipd_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbTipoPago_Insert" ReturnType="Collection(LateOSModel.UDP_Gral_tbTipoPago_Insert_Result)">
+      <Parameter Name="tipp_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="tipp_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="tipp_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_tbTipoPago_Update" ReturnType="Collection(LateOSModel.UDP_Gral_tbTipoPago_Update_Result)">
+      <Parameter Name="tipp_Id" Mode="In" Type="Int32" />
+      <Parameter Name="tipp_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="tipp_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="tipp_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="tipp_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="tipp_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbCliente_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbCliente_Insert_Result)">
+      <Parameter Name="clte_Identidad" Mode="In" Type="String" />
+      <Parameter Name="clte_Nombre" Mode="In" Type="String" />
+      <Parameter Name="clte_Apellido" Mode="In" Type="String" />
+      <Parameter Name="clte_FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="clte_Sexo" Mode="In" Type="String" />
+      <Parameter Name="clte_Telefono" Mode="In" Type="String" />
+      <Parameter Name="clte_Correo" Mode="In" Type="String" />
+      <Parameter Name="usu_Id" Mode="In" Type="Int32" />
+      <Parameter Name="clte_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="clte_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbCliente_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbCliente_Update_Result)">
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="clte_Identidad" Mode="In" Type="String" />
+      <Parameter Name="clte_Nombre" Mode="In" Type="String" />
+      <Parameter Name="clte_Apellido" Mode="In" Type="String" />
+      <Parameter Name="clte_FechaNacimiento" Mode="In" Type="DateTime" />
+      <Parameter Name="clte_Sexo" Mode="In" Type="String" />
+      <Parameter Name="clte_Telefono" Mode="In" Type="String" />
+      <Parameter Name="clte_Correo" Mode="In" Type="String" />
+      <Parameter Name="usu_Id" Mode="In" Type="Int32" />
+      <Parameter Name="clte_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="clte_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="clte_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="clte_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCategoria_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbCategoria_Insert_Result)">
+      <Parameter Name="cat_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="cat_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="cat_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCategoria_Update" ReturnType="Collection(LateOSModel.UDP_Inv_tbCategoria_Update_Result)">
+      <Parameter Name="cat_Id" Mode="In" Type="Int32" />
+      <Parameter Name="cat_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="cat_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="cat_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="cat_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="cat_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbSubCategoria_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbSubCategoria_Insert_Result)">
+      <Parameter Name="subc_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="cat_Id" Mode="In" Type="Int32" />
+      <Parameter Name="subc_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="subc_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbSubCategoria_Update" ReturnType="Collection(String)">
+      <Parameter Name="subc_Id" Mode="In" Type="Int32" />
+      <Parameter Name="subc_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="cat_Id" Mode="In" Type="Int32" />
+      <Parameter Name="subc_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="subc_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="subc_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="subc_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Acce_tbUsuario_Insert" ReturnType="Collection(LateOSModel.UDP_Acce_tbUsuario_Insert_Result)">
+      <Parameter Name="usu_NombreUsuario" Mode="In" Type="String" />
+      <Parameter Name="usu_Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(LateOSModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(LateOSModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="UDP_Inv_InventarioFisico_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_InventarioFisico_Insert_Result)">
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="invf_total" Mode="In" Type="Int32" />
+      <Parameter Name="invf_FechaInventario" Mode="In" Type="DateTime" />
+      <Parameter Name="invf_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="invf_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_InventarioFisico_Update" ReturnType="Collection(LateOSModel.UDP_Inv_InventarioFisico_Update_Result)">
+      <Parameter Name="invf_id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="invf_total" Mode="In" Type="Int32" />
+      <Parameter Name="invf_FechaInventario" Mode="In" Type="DateTime" />
+      <Parameter Name="invf_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="invf_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="invf_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="invf_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbEntrada_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbEntrada_Insert_Result)">
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="ent_Existencia" Mode="In" Type="Int32" />
+      <Parameter Name="ent_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="ent_FechaEntrada" Mode="In" Type="DateTime" />
+      <Parameter Name="ent_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="ent_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbEntrada_Update" ReturnType="Collection(LateOSModel.UDP_Inv_tbEntrada_Update_Result)">
+      <Parameter Name="ent_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="ent_Existencia" Mode="In" Type="Int32" />
+      <Parameter Name="ent_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="ent_FechaEntrada" Mode="In" Type="DateTime" />
+      <Parameter Name="ent_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="ent_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="ent_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="ent_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbProducto_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbProducto_Insert_Result)">
+      <Parameter Name="prod_Codigo" Mode="In" Type="String" />
+      <Parameter Name="prod_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="prov_Id" Mode="In" Type="Int32" />
+      <Parameter Name="subc_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="prod_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="prod_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="prod_Img" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbProducto_Update" ReturnType="Collection(LateOSModel.UDP_Inv_tbProducto_Update_Result)">
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Codigo" Mode="In" Type="String" />
+      <Parameter Name="prod_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="prov_Id" Mode="In" Type="Int32" />
+      <Parameter Name="subc_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="prod_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="prod_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="prod_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="prod_FechaModifica" Mode="In" Type="DateTime" />
+      <Parameter Name="prod_Img" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbProveedor_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbProveedor_Insert_Result)">
+      <Parameter Name="prov_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="prov_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="prov_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbProveedor_Update" ReturnType="Collection(LateOSModel.UDP_Inv_tbProveedor_Update_Result)">
+      <Parameter Name="prov_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prov_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="prov_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="prov_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="prov_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="prov_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbSalida_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbSalida_Insert_Result)">
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="sali_Existencia" Mode="In" Type="Int32" />
+      <Parameter Name="sali_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="sali_FechaEntrada" Mode="In" Type="DateTime" />
+      <Parameter Name="sali_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="sali_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbSalida_Update" ReturnType="Collection(LateOSModel.UDP_Inv_tbSalida_Update_Result)">
+      <Parameter Name="sali_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="sali_Existencia" Mode="In" Type="Int32" />
+      <Parameter Name="sali_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="sali_FechaEntrada" Mode="In" Type="DateTime" />
+      <Parameter Name="sali_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="sali_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="sali_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="sali_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbClienteDireccion_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbClienteDireccion_Insert_Result)">
+      <Parameter Name="clted_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_Id" Mode="In" Type="Int32" />
+      <Parameter Name="clted_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="clted_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbClienteDireccion_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbClienteDireccion_Update_Result)">
+      <Parameter Name="clted_Id" Mode="In" Type="Int32" />
+      <Parameter Name="clted_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="ciu_Id" Mode="In" Type="Int32" />
+      <Parameter Name="clted_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="clted_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbDevolucion_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbDevolucion_Insert_Result)">
+      <Parameter Name="fact_Id" Mode="In" Type="Int32" />
+      <Parameter Name="dev_Razon" Mode="In" Type="String" />
+      <Parameter Name="dev_Fecha" Mode="In" Type="DateTime" />
+      <Parameter Name="dev_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="dev_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbDevolucion_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbDevolucion_Update_Result)">
+      <Parameter Name="dev_Id" Mode="In" Type="Int32" />
+      <Parameter Name="fact_Id" Mode="In" Type="Int32" />
+      <Parameter Name="dev_Razon" Mode="In" Type="String" />
+      <Parameter Name="dev_Fecha" Mode="In" Type="DateTime" />
+      <Parameter Name="dev_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="dev_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="dev_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="dev_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbDevolucionDetalle_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbDevolucionDetalle_Insert_Result)">
+      <Parameter Name="dev_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="devd_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="devd_Impuesto" Mode="In" Type="Decimal" />
+      <Parameter Name="devd_Descuento" Mode="In" Type="Decimal" />
+      <Parameter Name="devd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="devd_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbDevolucionDetalle_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbDevolucionDetalle_Update_Result)">
+      <Parameter Name="devd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="dev_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="devd_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="devd_Impuesto" Mode="In" Type="Decimal" />
+      <Parameter Name="devd_Descuento" Mode="In" Type="Decimal" />
+      <Parameter Name="devd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="devd_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="devd_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="devd_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbEstadoFactura_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbEstadoFactura_Insert_Result)">
+      <Parameter Name="estf_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="estf_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="estf_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbEstadoFactura_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbEstadoFactura_Update_Result)">
+      <Parameter Name="estf_Id" Mode="In" Type="Int32" />
+      <Parameter Name="estf_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="estf_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="estf_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="estf_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="estf_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbEstadoTransaccion_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbEstadoTransaccion_Insert_Result)">
+      <Parameter Name="estt_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="estt_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="estt_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbEstadoTransaccion_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbEstadoTransaccion_Update_Result)">
+      <Parameter Name="estt_Id" Mode="In" Type="Int32" />
+      <Parameter Name="estt_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="estt_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="estt_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="estt_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="estt_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbFactura_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbFactura_Insert_Result)">
+      <Parameter Name="fact_Codigo" Mode="In" Type="String" />
+      <Parameter Name="fact_Fecha" Mode="In" Type="DateTime" />
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="tipp_Id" Mode="In" Type="Int32" />
+      <Parameter Name="forp_Id" Mode="In" Type="Int32" />
+      <Parameter Name="fact_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="fact_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbFactura_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbFactura_Update_Result)">
+      <Parameter Name="fact_Id" Mode="In" Type="Int32" />
+      <Parameter Name="fact_Fecha" Mode="In" Type="DateTime" />
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="tipp_Id" Mode="In" Type="Int32" />
+      <Parameter Name="forp_Id" Mode="In" Type="Int32" />
+      <Parameter Name="fact_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="fact_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="fact_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="fact_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbFacturaDetalle_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbFacturaDetalle_Insert_Result)">
+      <Parameter Name="fact_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="facd_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="facd_Impuesto" Mode="In" Type="Decimal" />
+      <Parameter Name="facd_Descuento" Mode="In" Type="Decimal" />
+      <Parameter Name="facd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="facd_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbFacturaDetalle_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbFacturaDetalle_Update_Result)">
+      <Parameter Name="facd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="fact_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="facd_Cantidad" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="facd_Impuesto" Mode="In" Type="Decimal" />
+      <Parameter Name="facd_Descuento" Mode="In" Type="Decimal" />
+      <Parameter Name="facd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="facd_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="facd_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="facd_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbFormaPago_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbFormaPago_Insert_Result)">
+      <Parameter Name="forp_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="forp_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="forp_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbFormaPago_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbFormaPago_Update_Result)">
+      <Parameter Name="forp_Id" Mode="In" Type="Int32" />
+      <Parameter Name="forp_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="forp_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="forp_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="forp_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="forp_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbListadoPrecio_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbListadoPrecio_Insert_Result)">
+      <Parameter Name="lip_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="lip_Prioridad" Mode="In" Type="Int32" />
+      <Parameter Name="lip_EsActivo" Mode="In" Type="Boolean" />
+      <Parameter Name="lip_FechaInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="lip_FechaFin" Mode="In" Type="DateTime" />
+      <Parameter Name="lip_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="lip_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbListadoPrecio_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbListadoPrecio_Update_Result)">
+      <Parameter Name="lip_Id" Mode="In" Type="Int32" />
+      <Parameter Name="lip_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="lip_Prioridad" Mode="In" Type="Int32" />
+      <Parameter Name="lip_EsActivo" Mode="In" Type="Boolean" />
+      <Parameter Name="lip_FechaInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="lip_FechaFin" Mode="In" Type="DateTime" />
+      <Parameter Name="lip_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="lip_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbListadoPrecioDetalle_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbListadoPrecioDetalle_Insert_Result)">
+      <Parameter Name="lip_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="tipd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="lipd_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="lipd_ISV" Mode="In" Type="Decimal" />
+      <Parameter Name="lipd_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="lipd_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbListadoPrecioDetalle_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbListadoPrecioDetalle_Update_Result)">
+      <Parameter Name="lipd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="lip_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="tipd_Id" Mode="In" Type="Int32" />
+      <Parameter Name="lipd_Precio" Mode="In" Type="Decimal" />
+      <Parameter Name="lipd_ISV" Mode="In" Type="Decimal" />
+      <Parameter Name="lipd_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="lipd_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbTransaccionDetalle_Insert" ReturnType="Collection(LateOSModel.UDP_Vent_tbTransaccionDetalle_Insert_Result)">
+      <Parameter Name="trad_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="trad_Fecha" Mode="In" Type="DateTime" />
+      <Parameter Name="fact_Id" Mode="In" Type="Int32" />
+      <Parameter Name="estt_Id" Mode="In" Type="Int32" />
+      <Parameter Name="trad_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="trad_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbTransaccionDetalle_Update" ReturnType="Collection(LateOSModel.UDP_Vent_tbTransaccionDetalle_Update_Result)">
+      <Parameter Name="trad_Id" Mode="In" Type="Int32" />
+      <Parameter Name="trad_Descripcion" Mode="In" Type="String" />
+      <Parameter Name="trad_Fecha" Mode="In" Type="DateTime" />
+      <Parameter Name="fact_Id" Mode="In" Type="Int32" />
+      <Parameter Name="estt_Id" Mode="In" Type="Int32" />
+      <Parameter Name="trad_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="trad_FechaCrea" Mode="In" Type="DateTime" />
+      <Parameter Name="trad_UsuarioModifica" Mode="In" Type="Int32" />
+      <Parameter Name="trad_FechaModifica" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCategoria_Select_" ReturnType="Collection(LateOSModel.UDP_Inv_tbCategoria_Select__Result)">
+      <Parameter Name="cat__Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <AssociationSet Name="FK_Vent_tbTransaccionDetalle_estt_Id" Association="LateOSModel.FK_Vent_tbTransaccionDetalle_estt_Id">
+      <End Role="tbEstadoTransaccion" EntitySet="tbEstadoTransaccion" />
+      <End Role="tbTransaccionDetalle" EntitySet="tbTransaccionDetalle" />
+    </AssociationSet>
+    <FunctionImport Name="UDP_Inv_tbSubCategoria_Select_" ReturnType="Collection(LateOSModel.UDP_Inv_tbSubCategoria_Select__Result)">
+      <Parameter Name="subc_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="tbProducto" EntityType="LateOSModel.tbProducto" />
+    <EntitySet Name="tbProductoImagen" EntityType="LateOSModel.tbProductoImagen" />
+    <AssociationSet Name="FK_Inv_tbProducto_prod_UsuarioCrea" Association="LateOSModel.FK_Inv_tbProducto_prod_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbProducto" EntitySet="tbProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProducto_prod_UsuarioModifica" Association="LateOSModel.FK_Inv_tbProducto_prod_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbProducto" EntitySet="tbProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProductoImagen_proi_UsuarioCrea" Association="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioCrea">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbProductoImagen" EntitySet="tbProductoImagen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProductoImagen_proi_UsuarioModifica" Association="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioModifica">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="tbProductoImagen" EntitySet="tbProductoImagen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_InventarioFisico_prod_Id" Association="LateOSModel.FK_Inv_InventarioFisico_prod_Id">
+      <End Role="tbProducto" EntitySet="tbProducto" />
+      <End Role="InventarioFisico" EntitySet="InventarioFisico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbEntrada_prod_Id" Association="LateOSModel.FK_Inv_tbEntrada_prod_Id">
+      <End Role="tbProducto" EntitySet="tbProducto" />
+      <End Role="tbEntrada" EntitySet="tbEntrada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProducto_prov_Id" Association="LateOSModel.FK_Inv_tbProducto_prov_Id">
+      <End Role="tbProveedor" EntitySet="tbProveedor" />
+      <End Role="tbProducto" EntitySet="tbProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProducto_subc_Id" Association="LateOSModel.FK_Inv_tbProducto_subc_Id">
+      <End Role="tbSubCategoria" EntitySet="tbSubCategoria" />
+      <End Role="tbProducto" EntitySet="tbProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbProductoImagen_prod_Id" Association="LateOSModel.FK_Inv_tbProductoImagen_prod_Id">
+      <End Role="tbProducto" EntitySet="tbProducto" />
+      <End Role="tbProductoImagen" EntitySet="tbProductoImagen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_tbSaliada_prod_Id" Association="LateOSModel.FK_INV_tbSaliada_prod_Id">
+      <End Role="tbProducto" EntitySet="tbProducto" />
+      <End Role="tbSalida" EntitySet="tbSalida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbListadoPrecioDetalle_prod_Id" Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_prod_Id">
+      <End Role="tbProducto" EntitySet="tbProducto" />
+      <End Role="tbListadoPrecioDetalle" EntitySet="tbListadoPrecioDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vent_tbFacturaDetalle_prod_Id" Association="LateOSModel.FK_Vent_tbFacturaDetalle_prod_Id">
+      <End Role="tbProducto" EntitySet="tbProducto" />
+      <End Role="tbFacturaDetalle" EntitySet="tbFacturaDetalle" />
+    </AssociationSet>
+    <FunctionImport Name="UDP_Gral_tbCiudad_Select_" ReturnType="Collection(LateOSModel.UDP_Gral_tbCiudad_Select__Result)">
+      <Parameter Name="ciu_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbListadoPrecio_Select" ReturnType="Collection(LateOSModel.UDP_Vent_tbListadoPrecio_Select_Result)">
+      <Parameter Name="lip_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbListadoPrecioDetalle_Select" ReturnType="Collection(LateOSModel.UDP_Vent_tbListadoPrecioDetalle_Select_Result)">
+      <Parameter Name="lipd_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_InventarioFisico_Select" ReturnType="Collection(LateOSModel.UDP_Inv_InventarioFisico_Select_Result)">
+      <Parameter Name="invf_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbProductoImagen_Delete" ReturnType="Collection(LateOSModel.UDP_Inv_tbProductoImagen_Delete_Result)">
+      <Parameter Name="proi_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbProductoImagen_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbProductoImagen_Insert_Result)">
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="proi_imagen" Mode="In" Type="String" />
+      <Parameter Name="proi_UsuarioCrea" Mode="In" Type="Int32" />
+      <Parameter Name="proi_FechaCrea" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbCliente_Select_" ReturnType="Collection(LateOSModel.UDP_Vent_tbCliente_Select__Result)">
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Vent_tbTransaccionDetalle_Select_" ReturnType="Collection(LateOSModel.UDP_Vent_tbTransaccionDetalle_Select__Result)">
+      <Parameter Name="trad_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="tbRol" EntityType="LateOSModel.tbRol" />
+    <EntitySet Name="tbCarrito" EntityType="LateOSModel.tbCarrito" />
+    <EntitySet Name="Usuario_Rol" EntityType="LateOSModel.Usuario_Rol" />
+    <EntitySet Name="V_Producto_Informacion" EntityType="LateOSModel.V_Producto_Informacion" />
+    <EntitySet Name="V_Producto_Select" EntityType="LateOSModel.V_Producto_Select" />
+    <EntitySet Name="V_RecuperarCuenta" EntityType="LateOSModel.V_RecuperarCuenta" />
+    <EntitySet Name="V_Usuarios" EntityType="LateOSModel.V_Usuarios" />
+    <AssociationSet Name="FK_ACCE_TBROL_id" Association="LateOSModel.FK_ACCE_TBROL_id">
+      <End Role="tbRol" EntitySet="tbRol" />
+      <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ACCE_TBUSUARIO_usu_Id" Association="LateOSModel.FK_ACCE_TBUSUARIO_usu_Id">
+      <End Role="tbUsuarios" EntitySet="tbUsuarios" />
+      <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbCarrito_clte_Id" Association="LateOSModel.FK_Inv_tbCarrito_clte_Id">
+      <End Role="tbCliente" EntitySet="tbCliente" />
+      <End Role="tbCarrito" EntitySet="tbCarrito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inv_tbCarrito_prod_Id" Association="LateOSModel.FK_Inv_tbCarrito_prod_Id">
+      <End Role="tbProducto" EntitySet="tbProducto" />
+      <End Role="tbCarrito" EntitySet="tbCarrito" />
+    </AssociationSet>
+    <FunctionImport Name="UDP_Gral_EstatusMeses" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="UDP_Gral_EstatusMesesTotal" ReturnType="Collection(Decimal)">
+      <Parameter Name="MesActual" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_Producto_Select" ReturnType="Collection(LateOSModel.UDP_Inv_Producto_Select_Result)">
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCarrito_Select" ReturnType="Collection(LateOSModel.UDP_Inv_tbCarrito_Select_Result1)">
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCategoria_Select_Descripcion" ReturnType="Collection(String)" />
+    <FunctionImport Name="UDP_Inv_tbProducto_Select_Categoria" ReturnType="Collection(LateOSModel.UDP_Inv_tbProducto_Select_Categoria_Result)">
+      <Parameter Name="cat_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Gral_CantGenderUser" ReturnType="Collection(LateOSModel.UDP_Gral_CantGenderUser_Result)" />
+    <FunctionImport Name="UDP_Gral_CantOnlineUser" ReturnType="Collection(LateOSModel.UDP_Gral_CantOnlineUser_Result)" />
+    <FunctionImport Name="UDP_Inv_tbCarrito_Delete" ReturnType="Collection(LateOSModel.UDP_Inv_tbCarrito_Delete_Result)">
+      <Parameter Name="car_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCarrito_Insert" ReturnType="Collection(LateOSModel.UDP_Inv_tbCarrito_Insert_Result)">
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="car_Cantidad" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCarrito_Select1" ReturnType="Collection(LateOSModel.UDP_Inv_tbCarrito_Select1_Result)">
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UDP_Inv_tbCarrito_Update" ReturnType="Collection(LateOSModel.UDP_Inv_tbCarrito_Update_Result)">
+      <Parameter Name="car_Id" Mode="In" Type="Int32" />
+      <Parameter Name="clte_Id" Mode="In" Type="Int32" />
+      <Parameter Name="prod_Id" Mode="In" Type="Int32" />
+      <Parameter Name="car_FechaOrden" Mode="In" Type="DateTime" />
+      <Parameter Name="car_Cantidad" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="UDP_Gral_tbCiudad_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbCiudad_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbPais_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbPais_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbEmpleadoDepartamento_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbEmpleadoDepartamento_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbEmpleadoCargo_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbEmpleadoCargo_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbTipoDescuento_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbTipoDescuento_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbTipoPago_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbTipoPago_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbEmpleado_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_tbEmpleado_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbCliente_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbCliente_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCategoria_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbSubCategoria_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_InventarioFisico_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_InventarioFisico_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbEntrada_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbEntrada_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbProducto_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbProducto_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbProveedor_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbProveedor_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbSalida_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbSalida_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbClienteDireccion_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbClienteDireccion_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbDevolucion_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbDevolucion_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbDevolucionDetalle_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbDevolucionDetalle_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbEstadoFactura_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbEstadoFactura_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbEstadoTransaccion_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbEstadoTransaccion_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbFactura_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbFactura_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbFacturaDetalle_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbFacturaDetalle_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbFormaPago_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbFormaPago_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbListadoPrecio_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbListadoPrecio_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbListadoPrecioDetalle_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbListadoPrecioDetalle_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbTransaccionDetalle_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbTransaccionDetalle_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCategoria_Select__Result">
+    <Property Type="Int32" Name="cat_Id" Nullable="false" />
+    <Property Type="String" Name="cat_Descripcion" Nullable="false" MaxLength="80" />
+    <Property Type="Int32" Name="cat_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="cat_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="cat_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="cat_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCategoria_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <Association Name="FK_Vent_tbTransaccionDetalle_estt_Id">
+    <End Type="LateOSModel.tbEstadoTransaccion" Role="tbEstadoTransaccion" Multiplicity="1" />
+    <End Type="LateOSModel.tbTransaccionDetalle" Role="tbTransaccionDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEstadoTransaccion">
+        <PropertyRef Name="estt_Id" />
+      </Principal>
+      <Dependent Role="tbTransaccionDetalle">
+        <PropertyRef Name="estt_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="UDP_Inv_tbSubCategoria_Select__Result">
+    <Property Type="Int32" Name="subc_Id" Nullable="false" />
+    <Property Type="String" Name="subc_Descripcion" Nullable="false" MaxLength="80" />
+    <Property Type="Int32" Name="cat_Id" Nullable="false" />
+    <Property Type="Int32" Name="subc_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="subc_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="subc_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="subc_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <EntityType Name="tbProducto">
+    <Key>
+      <PropertyRef Name="prod_Id" />
+    </Key>
+    <Property Name="prod_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prod_Codigo" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="prod_Descripcion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="prov_Id" Type="Int32" Nullable="false" />
+    <Property Name="subc_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Precio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="prod_UsuarioCrea" Type="Int32" Nullable="false" />
+    <Property Name="prod_FechaCrea" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="prod_UsuarioModifica" Type="Int32" />
+    <Property Name="prod_FechaModifica" Type="DateTime" Precision="3" />
+    <Property Name="prod_Img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbUsuarios" Relationship="LateOSModel.FK_Inv_tbProducto_prod_UsuarioCrea" FromRole="tbProducto" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="LateOSModel.FK_Inv_tbProducto_prod_UsuarioModifica" FromRole="tbProducto" ToRole="tbUsuarios" />
+    <NavigationProperty Name="InventarioFisico" Relationship="LateOSModel.FK_Inv_InventarioFisico_prod_Id" FromRole="tbProducto" ToRole="InventarioFisico" />
+    <NavigationProperty Name="tbEntrada" Relationship="LateOSModel.FK_Inv_tbEntrada_prod_Id" FromRole="tbProducto" ToRole="tbEntrada" />
+    <NavigationProperty Name="tbProveedor" Relationship="LateOSModel.FK_Inv_tbProducto_prov_Id" FromRole="tbProducto" ToRole="tbProveedor" />
+    <NavigationProperty Name="tbSubCategoria" Relationship="LateOSModel.FK_Inv_tbProducto_subc_Id" FromRole="tbProducto" ToRole="tbSubCategoria" />
+    <NavigationProperty Name="tbProductoImagen" Relationship="LateOSModel.FK_Inv_tbProductoImagen_prod_Id" FromRole="tbProducto" ToRole="tbProductoImagen" />
+    <NavigationProperty Name="tbSalida" Relationship="LateOSModel.FK_INV_tbSaliada_prod_Id" FromRole="tbProducto" ToRole="tbSalida" />
+    <NavigationProperty Name="tbListadoPrecioDetalle" Relationship="LateOSModel.FK_Vent_tbListadoPrecioDetalle_prod_Id" FromRole="tbProducto" ToRole="tbListadoPrecioDetalle" />
+    <NavigationProperty Name="tbFacturaDetalle" Relationship="LateOSModel.FK_Vent_tbFacturaDetalle_prod_Id" FromRole="tbProducto" ToRole="tbFacturaDetalle" />
+    <NavigationProperty Name="tbCarrito" Relationship="LateOSModel.FK_Inv_tbCarrito_prod_Id" FromRole="tbProducto" ToRole="tbCarrito" />
+  </EntityType>
+  <EntityType Name="tbProductoImagen">
+    <Key>
+      <PropertyRef Name="proi_Id" />
+    </Key>
+    <Property Name="proi_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prod_Id" Type="Int32" />
+    <Property Name="proi_UsuarioCrea" Type="Int32" />
+    <Property Name="proi_FechaCrea" Type="DateTime" Precision="3" />
+    <Property Name="proi_UsuarioModifica" Type="Int32" />
+    <Property Name="proi_FechaModifica" Type="DateTime" Precision="3" />
+    <Property Name="proi_imagen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbUsuarios" Relationship="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioCrea" FromRole="tbProductoImagen" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbUsuarios1" Relationship="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioModifica" FromRole="tbProductoImagen" ToRole="tbUsuarios" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Inv_tbProductoImagen_prod_Id" FromRole="tbProductoImagen" ToRole="tbProducto" />
+  </EntityType>
+  <Association Name="FK_Inv_tbProducto_prod_UsuarioCrea">
+    <End Type="LateOSModel.tbUsuarios" Role="tbUsuarios" Multiplicity="1" />
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbProducto">
+        <PropertyRef Name="prod_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProducto_prod_UsuarioModifica">
+    <End Type="LateOSModel.tbUsuarios" Role="tbUsuarios" Multiplicity="0..1" />
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbProducto">
+        <PropertyRef Name="prod_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProductoImagen_proi_UsuarioCrea">
+    <End Type="LateOSModel.tbUsuarios" Role="tbUsuarios" Multiplicity="0..1" />
+    <End Type="LateOSModel.tbProductoImagen" Role="tbProductoImagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbProductoImagen">
+        <PropertyRef Name="proi_UsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProductoImagen_proi_UsuarioModifica">
+    <End Type="LateOSModel.tbUsuarios" Role="tbUsuarios" Multiplicity="0..1" />
+    <End Type="LateOSModel.tbProductoImagen" Role="tbProductoImagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="tbProductoImagen">
+        <PropertyRef Name="proi_UsuarioModifica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_InventarioFisico_prod_Id">
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="1" />
+    <End Type="LateOSModel.InventarioFisico" Role="InventarioFisico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProducto">
+        <PropertyRef Name="prod_Id" />
+      </Principal>
+      <Dependent Role="InventarioFisico">
+        <PropertyRef Name="prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbEntrada_prod_Id">
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="1" />
+    <End Type="LateOSModel.tbEntrada" Role="tbEntrada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProducto">
+        <PropertyRef Name="prod_Id" />
+      </Principal>
+      <Dependent Role="tbEntrada">
+        <PropertyRef Name="prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProducto_prov_Id">
+    <End Type="LateOSModel.tbProveedor" Role="tbProveedor" Multiplicity="1" />
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProveedor">
+        <PropertyRef Name="prov_Id" />
+      </Principal>
+      <Dependent Role="tbProducto">
+        <PropertyRef Name="prov_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProducto_subc_Id">
+    <End Type="LateOSModel.tbSubCategoria" Role="tbSubCategoria" Multiplicity="1" />
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbSubCategoria">
+        <PropertyRef Name="subc_Id" />
+      </Principal>
+      <Dependent Role="tbProducto">
+        <PropertyRef Name="subc_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbProductoImagen_prod_Id">
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="0..1" />
+    <End Type="LateOSModel.tbProductoImagen" Role="tbProductoImagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProducto">
+        <PropertyRef Name="prod_Id" />
+      </Principal>
+      <Dependent Role="tbProductoImagen">
+        <PropertyRef Name="prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_tbSaliada_prod_Id">
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="1" />
+    <End Type="LateOSModel.tbSalida" Role="tbSalida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProducto">
+        <PropertyRef Name="prod_Id" />
+      </Principal>
+      <Dependent Role="tbSalida">
+        <PropertyRef Name="prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbListadoPrecioDetalle_prod_Id">
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="1" />
+    <End Type="LateOSModel.tbListadoPrecioDetalle" Role="tbListadoPrecioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProducto">
+        <PropertyRef Name="prod_Id" />
+      </Principal>
+      <Dependent Role="tbListadoPrecioDetalle">
+        <PropertyRef Name="prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vent_tbFacturaDetalle_prod_Id">
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="1" />
+    <End Type="LateOSModel.tbFacturaDetalle" Role="tbFacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProducto">
+        <PropertyRef Name="prod_Id" />
+      </Principal>
+      <Dependent Role="tbFacturaDetalle">
+        <PropertyRef Name="prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="UDP_Gral_tbCiudad_Select__Result">
+    <Property Type="Int32" Name="ciu_Id" Nullable="false" />
+    <Property Type="String" Name="ciu_Descripcion" Nullable="false" MaxLength="35" />
+    <Property Type="Int32" Name="pais_Id" Nullable="false" />
+    <Property Type="Int32" Name="ciu_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="ciu_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="ciu_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="ciu_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbListadoPrecio_Select_Result">
+    <Property Type="Int32" Name="lip_Id" Nullable="false" />
+    <Property Type="String" Name="lip_Descripcion" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="lip_Prioridad" Nullable="false" />
+    <Property Type="Boolean" Name="lip_EsActivo" Nullable="false" />
+    <Property Type="DateTime" Name="lip_FechaInicio" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="lip_FechaFin" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="lip_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="lip_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="lip_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="lip_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbListadoPrecioDetalle_Select_Result">
+    <Property Type="Int32" Name="lipd_Id" Nullable="false" />
+    <Property Type="Int32" Name="lip_Id" Nullable="false" />
+    <Property Type="Int32" Name="prod_Id" Nullable="false" />
+    <Property Type="Int32" Name="tipd_Id" Nullable="true" />
+    <Property Type="Decimal" Name="lipd_Precio" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="lipd_ISV" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="lipd_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="lipd_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="lipd_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="lipd_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_InventarioFisico_Select_Result">
+    <Property Type="Int32" Name="invf_id" Nullable="false" />
+    <Property Type="Int32" Name="prod_Id" Nullable="false" />
+    <Property Type="Int32" Name="invf_total" Nullable="false" />
+    <Property Type="DateTime" Name="invf_FechaInventario" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="invf_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="invf_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbCliente_Select__Result">
+    <Property Type="Int32" Name="clte_Id" Nullable="false" />
+    <Property Type="String" Name="clte_Identidad" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="clte_Nombre" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="clte_Apellido" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="clte_FechaNacimiento" Nullable="false" />
+    <Property Type="String" Name="clte_Sexo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="clte_Telefono" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="clte_Correo" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="usu_Id" Nullable="false" />
+    <Property Type="Int32" Name="clte_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="clte_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="clte_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="clte_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="UDP_Vent_tbTransaccionDetalle_Select__Result">
+    <Property Type="Int32" Name="trad_Id" Nullable="false" />
+    <Property Type="String" Name="trad_Descripcion" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="trad_Fecha" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="fact_Id" Nullable="false" />
+    <Property Type="Int32" Name="estt_Id" Nullable="false" />
+    <Property Type="Int32" Name="trad_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="trad_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="trad_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="trad_FechaModifica" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbProductoImagen_Delete_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbProductoImagen_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <EntityType Name="tbRol">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Usuario_Rol" Relationship="LateOSModel.FK_ACCE_TBROL_id" FromRole="tbRol" ToRole="Usuario_Rol" />
+  </EntityType>
+  <EntityType Name="tbCarrito">
+    <Key>
+      <PropertyRef Name="car_Id" />
+    </Key>
+    <Property Name="car_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clte_Id" Type="Int32" />
+    <Property Name="prod_Id" Type="Int32" />
+    <Property Name="car_FechaOrden" Type="DateTime" Precision="3" />
+    <Property Name="car_Cantidad" Type="Int32" />
+    <NavigationProperty Name="tbCliente" Relationship="LateOSModel.FK_Inv_tbCarrito_clte_Id" FromRole="tbCarrito" ToRole="tbCliente" />
+    <NavigationProperty Name="tbProducto" Relationship="LateOSModel.FK_Inv_tbCarrito_prod_Id" FromRole="tbCarrito" ToRole="tbProducto" />
+  </EntityType>
+  <EntityType Name="Usuario_Rol">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usu_Id" Type="Int32" />
+    <Property Name="id_Rol" Type="Int32" />
+    <NavigationProperty Name="tbRol" Relationship="LateOSModel.FK_ACCE_TBROL_id" FromRole="Usuario_Rol" ToRole="tbRol" />
+    <NavigationProperty Name="tbUsuarios" Relationship="LateOSModel.FK_ACCE_TBUSUARIO_usu_Id" FromRole="Usuario_Rol" ToRole="tbUsuarios" />
+  </EntityType>
+  <EntityType Name="V_Producto_Informacion">
+    <Key>
+      <PropertyRef Name="prod_Id" />
+      <PropertyRef Name="prod_Codigo" />
+      <PropertyRef Name="prod_Descripcion" />
+      <PropertyRef Name="subc_Id" />
+    </Key>
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Codigo" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="prod_Descripcion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="subc_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="subc_Descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="cat_Id" Type="Int32" />
+    <Property Name="cat_Descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="invf_id" Type="Int32" />
+    <Property Name="invf_total" Type="Int32" />
+    <Property Name="invf_FechaInventario" Type="DateTime" Precision="3" />
+    <Property Name="lipd_Precio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="lipd_ISV" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="lip_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="lip_FechaInicio" Type="DateTime" Precision="3" />
+    <Property Name="lip_FechaFin" Type="DateTime" Precision="3" />
+    <Property Name="lip_Id" Type="Int32" />
+    <Property Name="tipd_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipd_Porcentaje" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="tipd_Id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="V_Producto_Select">
+    <Key>
+      <PropertyRef Name="prod_Id" />
+      <PropertyRef Name="prod_Codigo" />
+      <PropertyRef Name="prod_Descripcion" />
+      <PropertyRef Name="subc_Id" />
+    </Key>
+    <Property Name="prod_Id" Type="Int32" Nullable="false" />
+    <Property Name="prod_Codigo" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="prod_Descripcion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="subc_Id" Type="Int32" Nullable="false" />
+    <Property Name="subc_Descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="cat_Id" Type="Int32" />
+    <Property Name="cat_Descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="invf_id" Type="Int32" />
+    <Property Name="invf_total" Type="Int32" />
+    <Property Name="invf_FechaInventario" Type="DateTime" Precision="3" />
+    <Property Name="lipd_Precio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="lipd_ISV" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="lip_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="lip_FechaInicio" Type="DateTime" Precision="3" />
+    <Property Name="lip_FechaFin" Type="DateTime" Precision="3" />
+    <Property Name="lip_Id" Type="Int32" />
+    <Property Name="tipd_Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipd_Porcentaje" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="tipd_Id" Type="Int32" />
+    <Property Name="proi_imagen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="V_RecuperarCuenta">
+    <Key>
+      <PropertyRef Name="usu_Id" />
+      <PropertyRef Name="clte_correo" />
+    </Key>
+    <Property Name="usu_Id" Type="Int32" Nullable="false" />
+    <Property Name="usu_Token" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="clte_correo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="V_Usuarios">
+    <Key>
+      <PropertyRef Name="usu_Id" />
+      <PropertyRef Name="usu_NombreUsuario" />
+      <PropertyRef Name="usu_Password" />
+    </Key>
+    <Property Name="usu_Id" Type="Int32" Nullable="false" />
+    <Property Name="usu_NombreUsuario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="clte_Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="clte_Apellido" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="clte_Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_Password" Type="Binary" Nullable="false" MaxLength="64" FixedLength="false" />
+    <Property Name="usu_Token" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="clte_Id" Type="Int32" />
+    <Property Name="clte_Sexo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="clte_Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_ACCE_TBROL_id">
+    <End Type="LateOSModel.tbRol" Role="tbRol" Multiplicity="0..1" />
+    <End Type="LateOSModel.Usuario_Rol" Role="Usuario_Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbRol">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario_Rol">
+        <PropertyRef Name="id_Rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ACCE_TBUSUARIO_usu_Id">
+    <End Type="LateOSModel.tbUsuarios" Role="tbUsuarios" Multiplicity="0..1" />
+    <End Type="LateOSModel.Usuario_Rol" Role="Usuario_Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbUsuarios">
+        <PropertyRef Name="usu_Id" />
+      </Principal>
+      <Dependent Role="Usuario_Rol">
+        <PropertyRef Name="usu_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbCarrito_clte_Id">
+    <End Type="LateOSModel.tbCliente" Role="tbCliente" Multiplicity="0..1" />
+    <End Type="LateOSModel.tbCarrito" Role="tbCarrito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCliente">
+        <PropertyRef Name="clte_Id" />
+      </Principal>
+      <Dependent Role="tbCarrito">
+        <PropertyRef Name="clte_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inv_tbCarrito_prod_Id">
+    <End Type="LateOSModel.tbProducto" Role="tbProducto" Multiplicity="0..1" />
+    <End Type="LateOSModel.tbCarrito" Role="tbCarrito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProducto">
+        <PropertyRef Name="prod_Id" />
+      </Principal>
+      <Dependent Role="tbCarrito">
+        <PropertyRef Name="prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="UDP_Inv_Producto_Select_Result">
+    <Property Type="Int32" Name="prod_Id" Nullable="false" />
+    <Property Type="String" Name="prod_Codigo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="prod_Descripcion" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="subc_Id" Nullable="false" />
+    <Property Type="String" Name="subc_Descripcion" Nullable="true" MaxLength="80" />
+    <Property Type="Int32" Name="cat_Id" Nullable="true" />
+    <Property Type="String" Name="cat_Descripcion" Nullable="true" MaxLength="80" />
+    <Property Type="Int32" Name="invf_id" Nullable="true" />
+    <Property Type="Int32" Name="invf_total" Nullable="true" />
+    <Property Type="DateTime" Name="invf_FechaInventario" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="lipd_Precio" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="lipd_ISV" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="lip_Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="lip_FechaInicio" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="lip_FechaFin" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="lip_Id" Nullable="true" />
+    <Property Type="String" Name="tipd_Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="tipd_Porcentaje" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="tipd_Id" Nullable="true" />
+    <Property Type="String" Name="proi_imagen" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCarrito_Select_Result">
+    <Property Type="String" Name="prod_Descripcion" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="subc_Descripcion" Nullable="false" MaxLength="80" />
+    <Property Type="Decimal" Name="prod_Precio" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="car_FechaOrden" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="car_Cantidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbProducto_Select_Categoria_Result">
+    <Property Type="Int32" Name="prod_Id" Nullable="false" />
+    <Property Type="String" Name="prod_Codigo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="prod_Descripcion" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="prov_Id" Nullable="false" />
+    <Property Type="Int32" Name="subc_Id" Nullable="false" />
+    <Property Type="Decimal" Name="prod_Precio" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="prod_UsuarioCrea" Nullable="false" />
+    <Property Type="DateTime" Name="prod_FechaCrea" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="prod_UsuarioModifica" Nullable="true" />
+    <Property Type="DateTime" Name="prod_FechaModifica" Nullable="true" Precision="23" />
+    <Property Type="String" Name="prod_Img" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UDP_Acce_tbUsuario_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_CantGenderUser_Result">
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+    <Property Type="Int32" Name="Column2" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UDP_Gral_CantOnlineUser_Result">
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+    <Property Type="Int32" Name="Column2" Nullable="true" />
+    <Property Type="Int32" Name="Column3" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCarrito_Select1_Result">
+    <Property Type="Int32" Name="car_Id" Nullable="false" />
+    <Property Type="Int32" Name="clte_Id" Nullable="true" />
+    <Property Type="Int32" Name="prod_Id" Nullable="true" />
+    <Property Type="DateTime" Name="car_FechaOrden" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="car_Cantidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCarrito_Update_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCarrito_Delete_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCarrito_Select_Result1">
+    <Property Type="String" Name="prod_Descripcion" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="subc_Descripcion" Nullable="false" MaxLength="80" />
+    <Property Type="Decimal" Name="prod_Precio" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="car_FechaOrden" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="car_Cantidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="UDP_Inv_tbCarrito_Insert_Result">
+    <Property Type="String" Name="MensajeError" Nullable="true" MaxLength="30" />
+  </ComplexType>
+</Schema>

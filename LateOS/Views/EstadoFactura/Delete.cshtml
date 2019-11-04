@@ -1,0 +1,65 @@
+﻿@model LateOS.Models.tbEstadoFactura
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tbEstadoFactura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.estf_Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estf_Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estf_FechaCrea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estf_FechaCrea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estf_FechaModifica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estf_FechaModifica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbUsuarios.usu_NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbUsuarios.usu_NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbUsuarios1.usu_NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbUsuarios1.usu_NombreUsuario)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

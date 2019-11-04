@@ -1,0 +1,56 @@
+﻿@model IEnumerable<LateOS.Models.tbListadoPrecioDetalle>
+
+<div class="ibox-content">
+<table class="table table-striped table-bordered dataTable" id="tblListadoPrecioDetalle">
+<thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.lipd_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lipd_Precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lipd_ISV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbTipoDescuento.tipd_Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbProducto.prod_Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbListadoPrecio.lip_Descripcion)
+        </th>
+        <th>Acción</th>
+    </tr>
+</thead>
+<tbody>
+@foreach (var item in Model) {
+    <tr data-id="@item.lipd_Id"> 
+        <td>
+            @Html.DisplayFor(modelItem => item.lipd_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lipd_Precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lipd_ISV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbTipoDescuento.tipd_Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbProducto.prod_Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbListadoPrecio.lip_Descripcion)
+        </td>
+        <td>
+           <button type="button" class="btn btn-primary btn-xs" id="btnEditarListadoPrecioDetalle">Editar</button>
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+</div>

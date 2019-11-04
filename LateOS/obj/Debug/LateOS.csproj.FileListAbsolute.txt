@@ -1,0 +1,766 @@
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB01\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB02\Desktop\Proyecto\LateOS\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB02\Desktop\Proyecto LateOS\LateOS\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB02\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.csproj.CopyComplete
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\usuario\Desktop\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\proyecto base\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB02\Documents\Visual Studio 2015\Projects\proyecto base\PROYECTO BASE\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\LateOS.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\Informatica\Desktop\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\Informatica\Desktop\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\Informatica\Desktop\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\LAB02\OneDrive - BI DSS Technology(1)\Documentos\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\Lab 2.DESKTOP-FT7INF6\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\LateOS.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Antlr3.Runtime.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\EntityFramework.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\EntityFramework.SqlServer.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.Web.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Newtonsoft.Json.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Helpers.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Mvc.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Optimization.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Razor.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Webpages.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Razor.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\WebGrease.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Antlr3.Runtime.pdb
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\EntityFramework.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\EntityFramework.SqlServer.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.Web.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\Newtonsoft.Json.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Optimization.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Razor.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Webpages.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Webpages.Razor.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Helpers.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\bin\System.Web.Mvc.xml
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\Lab 2.DESKTOP-H734KEQ\Desktop\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\LateOS.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\cflam\source\repos\LateOS\LateOS\obj\Debug\LateOS.csproj.CoreCompileInputs.cache
+C:\Users\cflam\source\repos\LateOS\LateOS\obj\Debug\LateOS.csproj.CopyComplete
+C:\Users\cflam\source\repos\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\cflam\source\repos\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\cflam\source\repos\LateOS\LateOS\obj\Debug\LateOS.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\LateOS\LateOS\obj\Debug\LateOS.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\LateOS\LateOS\obj\Debug\LateOS.csprojAssemblyReference.cache
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\LateOS.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\Malco\Downloads\LateOS\LateOS\obj\Debug\LateOS.csprojResolveAssemblyReference.cache
+C:\Users\Malco\Downloads\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\Malco\Downloads\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\diazm\Documents\Visual Studio 2015\Projects\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\ApplicationInsights.config
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\csc.exe
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\vbc.exe
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\LateOS.dll.config
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\LateOS.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\LateOS.pdb
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\obj\Debug\LateOS.csprojAssemblyReference.cache
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\obj\Debug\LateOS.csproj.CopyComplete
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\obj\Debug\LateOS.dll
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\obj\Debug\LateOS.pdb
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\a\Downloads\LateOS\LateOS\LateOS\obj\Debug\LateOS.csproj.CoreCompileInputs.cache

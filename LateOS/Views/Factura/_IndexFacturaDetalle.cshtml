@@ -1,0 +1,59 @@
+﻿@model IEnumerable<LateOS.Models.tbFacturaDetalle>
+
+<div class="ibox-content">
+    <table class="table table-bordered" id="tblFacturaDetalle">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.tbProducto.prod_Descripcion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.tbProducto.prod_Precio)
+                </th>
+                <th>
+                    @Html.DisplayName("Cantidad")
+                </th>
+                <th>
+                    @Html.DisplayName("Impuesto")
+                </th>
+                <th>
+                    @Html.DisplayName("Descuento")
+                </th>
+                <th>
+                    @Html.DisplayName("Total")
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var total = (item.prod_Precio * item.facd_Cantidad) - ((item.facd_Descuento * item.prod_Precio * item.facd_Cantidad) / 100) + ((item.facd_Impuesto * (item.prod_Precio * item.facd_Cantidad)) / 100);
+                <tr data-id="@item.facd_Id">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tbProducto.prod_Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tbProducto.prod_Precio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.facd_Cantidad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.facd_Impuesto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.facd_Descuento)
+                    </td>
+                    <td>
+                        @Html.Display(total.ToString())
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Detalles", "Details", new { id = item.facd_Id }, new { @class = "btn btn-default btn-xs" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

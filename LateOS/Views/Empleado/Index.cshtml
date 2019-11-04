@@ -1,0 +1,99 @@
+﻿@model IEnumerable<LateOS.Models.tbEmpleado>
+
+@{
+    ViewBag.Title = "Listado Empleado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    @Html.ActionLink("Registrar Empleado ", "Create", null, new { @class = "btn btn-primary pull-right" })
+                    <h2>Listado Empleado</h2>
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                            @*DataTables_Table_0*@
+                            <table class="table table-striped table-bordered table-hover dataTables-example dataTable dtr-inline" id="tblCliente" aria-describedby="DataTables_Table_0_info" role="grid">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 210px;">@Html.DisplayNameFor(model => model.emp_Identidad)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 260px;">@Html.DisplayNameFor(model => model.emp_Nombres)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 235px;">@Html.DisplayNameFor(model => model.emp_Apellidos)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 180px;">@Html.DisplayNameFor(model => model.emp_FechaNacimiento)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.emp_Sexo)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.emp_CorreoElectronico)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.emp_Telefono)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.emp_FechaIngreso)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.emp_EsActivo)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">Acción:</th>
+                                      
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+
+                                        <tr class="gradeA odd" role="row" data-id="@item.emp_Id">
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_Identidad)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_Nombres)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_Apellidos)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_FechaNacimiento)
+                                            </td>
+                                            <td>
+                                                @{
+                                                    string Descripcion = "";
+                                                    switch (item.emp_Sexo)
+                                                    {
+                                                        case "M":
+                                                            Descripcion = "Masculino";
+                                                            break;
+                                                        case "F":
+                                                            Descripcion = "Femenino";
+                                                            break;
+                                                        default:
+                                                            Descripcion = "Hola";
+                                                            break;
+                                                    }
+                                                }
+                                                @Descripcion
+                                                @*@Html.DisplayFor(modelItem => item.emp_Sexo)*@
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_CorreoElectronico)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_Telefono)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_FechaIngreso)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.emp_EsActivo)
+                                            </td>
+
+                                            <td width="10%">
+                                                @Html.ActionLink("Editar", "Edit", new { id = item.emp_Id }, new { @class = "btn btn-primary btn-xs" })
+                                                @Html.ActionLink("Detalles", "Details", new { id = item.emp_Id }, new { @class = "btn btn-info btn-xs" })
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+﻿@model LateOS.Models.tbCliente
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "frmEditarClie" }))
+{
+    <div class="form-horizontal">
+        @Html.HiddenFor(model => model.clte_Id)
+        @Html.HiddenFor(model => model.clte_Sexo)
+        @Html.HiddenFor(model => model.clte_UsuarioCrea)
+        @Html.HiddenFor(model => model.usu_Id)
+        @Html.HiddenFor(model => model.clte_FechaCrea)
+        @Html.HiddenFor(model => model.clte_FechaModifica)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.clte_Identidad, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.clte_Identidad, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.clte_Identidad, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.clte_Nombre, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.clte_Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.clte_Nombre, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.clte_Apellido, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.clte_Apellido, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.clte_Apellido, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.clte_FechaNacimiento, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.clte_FechaNacimiento, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.clte_FechaNacimiento, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.clte_Sexo, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.clte_Sexo, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.clte_Sexo, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.clte_Sexo, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="i-checks">
+                        <label class="hover">
+                            <div class="iradio_square-green hover" style="position: relative;">
+                                <input type="radio" value="F" name="a" id="clte_Sexo" style="position: absolute; opacity: 0;">
+                                <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                            </div> <i></i> Femenino
+                        </label>
+                    </div>
+                    <div class="i-checks">
+                        <label class="hover">
+                            <div class="iradio_square-green hover" style="position: relative;">
+                                <input type="radio" value="M" name="a" id="clte_Sexo" style="position: absolute; opacity: 0;">
+                                <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                            </div> <i></i> Masculino
+                        </label>
+                    </div>
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.clte_Sexo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-sm-10">
+                <select class="form-control m-b" id="clte_SexoEdit">
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.clte_Telefono, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.clte_Telefono, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.clte_Telefono, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.clte_Correo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.clte_Correo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.clte_Correo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+}

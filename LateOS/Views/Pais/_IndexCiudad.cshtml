@@ -1,0 +1,27 @@
+﻿@model IEnumerable<LateOS.Models.tbCiudad>
+
+<div class="ibox-content">
+    <table class="table table-bordered" id="tblCiudad">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ciu_Descripcion)
+                </th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr data-id="@item.ciu_Id">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ciu_Descripcion)
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-xs" id="btnEditarCiudad">Editar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

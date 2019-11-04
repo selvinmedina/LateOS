@@ -1,0 +1,73 @@
+﻿@model LateOS.Models.tbProducto
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="ibox-title">
+    @Html.ActionLink("Regresar", "Index", null, new { @class = "pull-right" })
+    <h2>Detalles del producto</h2>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="ibox product-detail">
+                <div class="ibox-content">
+
+                    <div class="row">
+                        <div class="col-md-5">
+
+
+                            <div class="product-images">
+                                @foreach (var item in Model.tbProductoImagen)
+                                {
+                                    <div>
+                                        <div class="image-imitation" style="background-image:url('../../@item.proi_imagen')">
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+
+                        </div>
+                        <div class="col-md-7">
+
+                            <h2 class="font-bold m-b-xs">
+                                @Html.DisplayNameFor(model => model.prod_Descripcion)
+                            </h2>
+
+                            <hr>
+
+                            <h4>Descripcion del Producto</h4>
+
+                            <div class="small text-muted">
+                                INSERTE LA DESCRIPCION DEL PRODUCTO AQUI
+                            </div>
+                            <dl class="small m-t-md"></dl>
+                            <hr>
+
+                            <div>
+                                <div class="btn-group">
+                                    @Html.HiddenFor(model => model.prod_Id)
+                                    <input type="submit" data-id="@Model.prod_Id" value="Añadir al Carrito" id="addProduct" class="btn btn-outline btn-primary" />
+                                    @*@Html.ActionLink("Añadir al carrito", "Create", "Carrito", new {  id = Model.prod_Id}, new { @class= "btn btn-primary btn-sm" })*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ibox-footer">
+                    <span class="pull-right">
+                        STOCK AQUI - <i class="fa fa-clock-o"></i> Publicado: @Html.DisplayFor(model => model.prod_FechaCrea)
+                    </span>
+                    Por: @Html.DisplayFor(model => model.tbProveedor.prov_Descripcion)
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

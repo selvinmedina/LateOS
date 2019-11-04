@@ -1,0 +1,30 @@
+﻿@model LateOS.Models.tbSubCategoria
+
+
+
+<div class="ibox-content">
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(model => model.subc_Descripcion, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.subc_Descripcion, new { htmlAttributes = new { @class = "form-control", maxlength = "80" } })
+                @Html.ValidationMessageFor(model => model.subc_Descripcion, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-sm-1">
+                <input type="button" class="btn btn-primary" id="btnAgregarSubcategoria" value="Agregar" />
+            </div>
+        </div>
+
+        <table class="table table-bordered table-striped table-hover" id="tblSubcategoria">
+            <thead>
+                <tr>
+                    <th>Descripción Subcategoria</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+

@@ -1,0 +1,31 @@
+﻿@model LateOS.Models.tbCiudad
+
+
+
+<div class="ibox-content">   
+    
+    <div class="form-horizontal">       
+        <div class="form-group">
+            @Html.LabelFor(model => model.ciu_Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.ciu_Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ciu_Descripcion, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-sm-1">
+                <input class="btn btn-primary btn-sm" id="btnAgregarCiudad" value="Agregar" type="button" />
+            </div>
+        </div>
+
+        <table class="table table-bordered table-striped table-hover" id="tblCiudad">
+            <thead>
+                <tr>
+                    <th>Descripcion Ciudad</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+	</div>
+
+

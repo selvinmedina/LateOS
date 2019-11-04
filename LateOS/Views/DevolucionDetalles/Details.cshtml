@@ -1,0 +1,104 @@
+﻿@model LateOS.Models.tbDevolucionDetalle
+
+@{
+    ViewBag.Title = "Detalles Devoluciones D.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12">
+<div class="ibox float-e-margins">
+<div class="ibox-title">
+	@Html.ActionLink("Regresar", "Index", null, new {@class="pull-right" })
+	<h2>Detalles Devoluciones D.</h2>
+</div>
+
+<div class="ibox-content">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.prod_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prod_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prod_Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prod_Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.devd_Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.devd_Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.devd_Impuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.devd_Impuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.devd_Descuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.devd_Descuento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.tbDevolucion.dev_Razon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbDevolucion.dev_Razon)
+        </dd>
+
+    </dl>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.devd_Id }, new {@class="btn btn-primary" }) 
+    @Html.ActionLink("Cancelar", "Index", null, new {@class="btn btn-danger" })
+</p>
+</div>
+
+
+
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h2>Auditoría</h2>
+        </div>
+        <div class="ibox-content">
+            <div class="form-horizontal">
+                <table class="table table-striped table-bordered dataTable">
+                    <thead>
+                        <tr>
+                            <th>Acción</th>
+                            <th>Usuario</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Creado</td>
+                            <td>@Html.DisplayFor(model => model.tbUsuarios.usu_NombreUsuario)</td>
+                            <td>@Html.DisplayFor(model => model.devd_FechaCrea)</td>
+                        </tr>
+                        <tr>
+                            <td>Modificado</td>
+                            <td>@Html.DisplayFor(model => model.tbUsuarios1.usu_NombreUsuario)</td>
+                            <td>@Html.DisplayFor(model => model.devd_FechaModifica)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

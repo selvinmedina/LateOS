@@ -1,0 +1,105 @@
+﻿@model IEnumerable<LateOS.Models.tbCarrito>
+@{
+    ViewBag.Title = "DetailsFactura";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    double subtotal = 0;
+    double isv = 0;
+    double total = 0;
+    int? cliente = 0;
+
+    var nombre = (LateOS.Models.V_Usuarios)HttpContext.Current.Session["User"];
+}
+
+<h2>Factura</h2>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="ibox-content p-xl">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>De:</h5>
+                        <address>
+                            <strong>LateOS, Inc.</strong><br>
+                            Km2 Desvio Armenta, 600/10<br>
+                            San Pedro Sula, HN 21120<br>
+                            <abbr title="Telefono">+</abbr> (504) 2501-4590
+                        </address>
+                    </div>
+
+                    <div class="col-sm-6 text-right">
+                        <h4>No. Factura</h4>
+                        <h4 class="text-navy">INV-000567F7-00</h4>
+                        <span>Para: @nombre.clte_Nombre  @nombre.clte_Apellido</span>
+                        <address>
+                            <strong>Corporate, Inc.</strong><br>
+                            112 Street Avenu, 1080<br>
+                            Miami, CT 445611<br>
+                            <abbr title="Phone">P:</abbr> (120) 9000-4321
+                        </address>
+                        <p>
+                            <span><strong>Fecha Factura:</strong> @DateTime.Now.ToString()</span><br />
+                            @*<span><strong>Fecha Pago: </strong>@DateTime.Now.ToString()</span>*@
+                        </p>
+                    </div>
+                </div>
+
+                <div class="table-responsive m-t">
+                    <table class="table invoice-table">
+                        <thead>
+                            <tr>
+                                <th>Lista de Articulos</th>
+                                <th>Cantidad</th>
+                                <th>Precio Unitario</th>
+                                <th>ISV</th>
+                                <th>Precio Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                cliente = item.clte_Id;
+                                subtotal += (Convert.ToDouble(item.tbProducto.prod_Precio) * Convert.ToDouble(item.car_Cantidad));
+                                isv += ((Convert.ToDouble(item.tbProducto.prod_Precio) * Convert.ToDouble(item.car_Cantidad)) * 0.15);
+                                total += (((Convert.ToDouble(item.tbProducto.prod_Precio) * Convert.ToDouble(item.car_Cantidad)) * 0.15) + (Convert.ToDouble(item.tbProducto.prod_Precio) * Convert.ToDouble(item.car_Cantidad)));
+                                <tr>
+                                    <td>
+                                        <div><strong>@item.tbProducto.prod_Descripcion</strong></div>
+                                    </td>
+                                    <td>@item.car_Cantidad</td>
+                                    <td>@(item.tbProducto.prod_Precio * item.car_Cantidad)</td>
+                                    <td>@((Convert.ToDouble(item.tbProducto.prod_Precio) * Convert.ToDouble(item.car_Cantidad)) * 0.15)</td>
+                                    <td>@(((Convert.ToDouble(item.tbProducto.prod_Precio) * Convert.ToDouble(item.car_Cantidad)) * 0.15) + (Convert.ToDouble(item.tbProducto.prod_Precio) * Convert.ToDouble(item.car_Cantidad)))</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div><!-- /table-responsive -->
+
+                <table class="table invoice-total">
+                    <tbody>
+                        <tr>
+                            <td><strong>Sub-Total :</strong></td>
+                            <td>@subtotal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ISV :</strong></td>
+                            <td>@isv</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TOTAL :</strong></td>
+                            <td>@total</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-right">
+                    <button type="submit" data-id="@cliente" id="RealizarPago" class="btn btn-primary"><i class="fa fa-dollar"></i> Realizar Pago</button>
+                </div>
+
+                <div class="well m-t">
+                    <strong>Aviso:</strong>
+                    Al presionar el boton 'Realizar Pago' ud esta autorizando el debito de su metodo de pago, y esta aceptando los terminos y condiciones de LateOS Inc.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

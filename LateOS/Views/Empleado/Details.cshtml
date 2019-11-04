@@ -1,0 +1,152 @@
+﻿@model LateOS.Models.tbEmpleado
+
+@{
+    ViewBag.Title = "Detalle Empleado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-8">
+  <div class=ibox float-e-margins>
+   <div class="ibox-title">
+     @Html.ActionLink("Regresar","Index",null,new { @class="pull-right"})
+    <h2>Detalle Empleado</h2>
+ </div>
+
+
+<div class="ibox-content">
+   
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_Identidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_Identidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_Apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_Apellidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_FechaNacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_FechaNacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_Sexo)
+        </dt>
+
+        <dd>
+            @{
+                                                    string Descripcion = "";
+                                                    switch (Model.emp_Sexo)
+                                                    {
+                                                        case "M":
+                                                            Descripcion = "Masculino";
+                                                            break;
+                                                        case "F":
+                                                            Descripcion = "Femenino";
+                                                            break;
+                                                        default:
+                                                            Descripcion = "Hola";
+                                                            break;
+                                                    }
+                                                }
+                                                @Descripcion
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_CorreoElectronico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_CorreoElectronico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_FechaIngreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_FechaIngreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emp_EsActivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_EsActivo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.tbEmpleadoCargo.empc_Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbEmpleadoCargo.empc_Descripcion)
+        </dd>
+
+    </dl>
+	
+
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.emp_Id },new {@class = "btn btn-primary"}) 
+    @Html.ActionLink("Cancelar","Index",null,new {@class="btn btn-danger"})
+</p>
+</div>
+</div>
+</div>
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h2>Auditoría</h2>
+    </div>
+    <div class="ibox-content">
+        <div class="form-horizontal">
+            <table class="table table-striped table-bordered dataTable">
+                <thead>
+                    <tr>
+                        <th>Acción</th>
+                        <th>Usuario</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Creado</td>
+                        <td>@Html.DisplayFor(model => model.tbUsuarios.usu_NombreUsuario)</td>
+                        <td>@Html.DisplayFor(model => model.emp_FechaCrea)</td>
+                    </tr>
+                    <tr>
+                        <td>Modificado</td>
+                        <td>@Html.DisplayFor(model => model.tbUsuarios1.usu_NombreUsuario)</td>
+                        <td>@Html.DisplayFor(model => model.emp_FechaModifica)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model LateOS.Models.ViewModel.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-5 col-lg-offset-3 box text-center loginscreen animated fadeInDown">
+    <div>
+        <h3>Registrarse en LateOS</h3>
+
+        <p>Credenciales.</p>
+        <h3>@ViewBag.Error</h3>
+        <h3>@ViewBag.Message</h3>
+        @using (Html.BeginForm("Register", "Login", FormMethod.Post))
+        {
+            <div class="form-group">
+                <input type="text" name="identidad" id="identidad" class="form-control" placeholder="Identidad" required="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" required="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Apellido" id="Apellido" class="form-control" placeholder="Apellido" required="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="correo" id="correo" class="form-control" placeholder="Correo electrónico" required="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="password" id="password" class="form-control" placeholder="Contraseña" required="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="FechaNacimiento" id="FechaNacimiento" class="form-control" placeholder="Fecha nacimiento" required="">
+            </div>
+            <div class="form-group">
+                <input type="radio" id="sexo" name="sexo" value="M">
+                <label for="contactChoice3">Masculino</label>
+                <input type="radio" id="sexo" name="sexo" value="F">
+                <label for="contactChoice3">Femenino</label>
+
+            </div>
+            <div class="form-group">
+                <input type="number" name="Telefono" id="Telefono" class="form-control" placeholder="Telefono" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">Registrarse</button>
+        }
+        <p class="m-t"> <small><a href="~/Login/Index">Iniciar sesión</a></small> </p>
+    </div>
+</div>

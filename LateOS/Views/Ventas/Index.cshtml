@@ -1,0 +1,40 @@
+﻿@model IEnumerable<LateOS.Models.tbProducto>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="ibox-title">
+	@Html.ActionLink("Home ", "Index","Home", null, new {@class="btn btn-primary pull-right" })
+	<h2>Productos</h2>
+</div>
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                <div class="ibox">
+                    <div class="ibox-content product-box">
+
+                        <div id="caja" class="product-imitation" style="background-image: url('../../@item.prod_Img'); height:230px;">
+                            
+                        </div>
+                        <div class="product-desc">
+                            <span class="product-price">
+                                $@Html.DisplayFor(modelItem => item.prod_Precio)
+                            </span>
+                            <small class="text-muted">@Html.DisplayFor(modelItem => item.tbSubCategoria.subc_Descripcion)</small>
+                            <a href="#" class="product-name"> @Html.DisplayFor(modelItem => item.prod_Descripcion)</a>
+
+
+
+                            <div class="small m-t-xs">
+                                ¡INSERTE SU DESCRIPCIÓN AQUÍ!
+                            </div>
+                            <div class="m-t text-righ">
+                                @*@Html.ActionLink("Eliminar", "Index", "Producto", new { id = item.prod_Id }, null)*@
+                                @Html.ActionLink("Info", "Details", new { id = item.prod_Id }, new { @class = "btn btn-xs btn-outline btn-primary" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }

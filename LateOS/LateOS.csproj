@@ -1,0 +1,1145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F5470DB-6020-41B7-A01C-98218A923EEB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LateOS</RootNamespace>
+    <AssemblyName>LateOS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\LateOS.dll" />
+    <Content Include="bin\LateOS.pdb" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.xml" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.xml" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.Web.xml" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.xml" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.xml" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="Content\bootstrap\animate.css" />
+    <Content Include="Content\bootstrap\blueimp-gallery.min.css" />
+    <Content Include="Content\bootstrap\bootstrap.css" />
+    <Content Include="Content\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\datatables.min.css" />
+    <Content Include="Content\bootstrap\patterns\header-profile.png" />
+    <Content Include="Content\bootstrap\style.css" />
+    <Content Include="Content\codemirror\codemirror.css" />
+    <Content Include="Content\dropzone\basic.css" />
+    <Content Include="Content\dropzone\dropzone.css" />
+    <Content Include="Content\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\gritter\jquery.gritter.css" />
+    <Content Include="Content\img\header-profile.jpg" />
+    <Content Include="Content\img\Logo.jpg" />
+    <Content Include="Content\img\profile_small.jpg" />
+    <Content Include="Content\img\p_big1.jpg" />
+    <Content Include="Content\img\p_big2.jpg" />
+    <Content Include="Content\img\p_big3.jpg" />
+    <Content Include="Content\jasny\jasny-bootstrap.min.css" />
+    <Content Include="Content\toastr\toastr.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\LateOSModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LateOSModel.edmx</DependentUpon>
+      <LastGenOutput>LateOSModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\LateOSModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LateOSModel.edmx</DependentUpon>
+      <LastGenOutput>LateOSModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\App\General\Carrito.js" />
+    <Content Include="scripts\App\General\CarruselJs.js" />
+    <Content Include="scripts\App\General\Categoria.js" />
+    <Content Include="scripts\App\General\Cliente.js" />
+    <Content Include="scripts\App\General\Factura.js" />
+    <Content Include="scripts\App\General\InfoStatus.js" />
+    <Content Include="scripts\App\General\InventarioFisico.js" />
+    <Content Include="scripts\App\General\ListadoPrecio.js" />
+    <Content Include="scripts\App\General\Pais.js" />
+    <Content Include="scripts\App\General\Producto.js" />
+    <Content Include="scripts\App\General\Proveedor.js" />
+    <Content Include="scripts\App\General\SerializeDate.js" />
+    <Content Include="scripts\bootstrap\bootstrap.js" />
+    <Content Include="scripts\bootstrap\bootstrap.min.js" />
+    <Content Include="scripts\codemirror\codemirror.js" />
+    <Content Include="scripts\codemirror\mode\apl\apl.js" />
+    <Content Include="scripts\codemirror\mode\apl\index.html" />
+    <Content Include="scripts\codemirror\mode\asterisk\asterisk.js" />
+    <Content Include="scripts\codemirror\mode\asterisk\index.html" />
+    <Content Include="scripts\codemirror\mode\clike\clike.js" />
+    <Content Include="scripts\codemirror\mode\clike\index.html" />
+    <Content Include="scripts\codemirror\mode\clike\scala.html" />
+    <Content Include="scripts\codemirror\mode\clojure\clojure.js" />
+    <Content Include="scripts\codemirror\mode\clojure\index.html" />
+    <Content Include="scripts\codemirror\mode\cobol\cobol.js" />
+    <Content Include="scripts\codemirror\mode\cobol\index.html" />
+    <Content Include="scripts\codemirror\mode\coffeescript\coffeescript.js" />
+    <Content Include="scripts\codemirror\mode\coffeescript\index.html" />
+    <Content Include="scripts\codemirror\mode\commonlisp\commonlisp.js" />
+    <Content Include="scripts\codemirror\mode\commonlisp\index.html" />
+    <Content Include="scripts\codemirror\mode\css\css.js" />
+    <Content Include="scripts\codemirror\mode\css\index.html" />
+    <Content Include="scripts\codemirror\mode\css\less.html" />
+    <Content Include="scripts\codemirror\mode\css\less_test.js" />
+    <Content Include="scripts\codemirror\mode\css\scss.html" />
+    <Content Include="scripts\codemirror\mode\css\scss_test.js" />
+    <Content Include="scripts\codemirror\mode\css\test.js" />
+    <Content Include="scripts\codemirror\mode\cypher\cypher.js" />
+    <Content Include="scripts\codemirror\mode\cypher\index.html" />
+    <Content Include="scripts\codemirror\mode\diff\diff.js" />
+    <Content Include="scripts\codemirror\mode\diff\index.html" />
+    <Content Include="scripts\codemirror\mode\django\django.js" />
+    <Content Include="scripts\codemirror\mode\django\index.html" />
+    <Content Include="scripts\codemirror\mode\dtd\dtd.js" />
+    <Content Include="scripts\codemirror\mode\dtd\index.html" />
+    <Content Include="scripts\codemirror\mode\dylan\dylan.js" />
+    <Content Include="scripts\codemirror\mode\dylan\index.html" />
+    <Content Include="scripts\codemirror\mode\d\d.js" />
+    <Content Include="scripts\codemirror\mode\d\index.html" />
+    <Content Include="scripts\codemirror\mode\ecl\ecl.js" />
+    <Content Include="scripts\codemirror\mode\ecl\index.html" />
+    <Content Include="scripts\codemirror\mode\eiffel\eiffel.js" />
+    <Content Include="scripts\codemirror\mode\eiffel\index.html" />
+    <Content Include="scripts\codemirror\mode\erlang\erlang.js" />
+    <Content Include="scripts\codemirror\mode\erlang\index.html" />
+    <Content Include="scripts\codemirror\mode\fortran\fortran.js" />
+    <Content Include="scripts\codemirror\mode\fortran\index.html" />
+    <Content Include="scripts\codemirror\mode\gas\gas.js" />
+    <Content Include="scripts\codemirror\mode\gas\index.html" />
+    <Content Include="scripts\codemirror\mode\gfm\gfm.js" />
+    <Content Include="scripts\codemirror\mode\gfm\index.html" />
+    <Content Include="scripts\codemirror\mode\gfm\test.js" />
+    <Content Include="scripts\codemirror\mode\gherkin\gherkin.js" />
+    <Content Include="scripts\codemirror\mode\gherkin\index.html" />
+    <Content Include="scripts\codemirror\mode\go\go.js" />
+    <Content Include="scripts\codemirror\mode\go\index.html" />
+    <Content Include="scripts\codemirror\mode\groovy\groovy.js" />
+    <Content Include="scripts\codemirror\mode\groovy\index.html" />
+    <Content Include="scripts\codemirror\mode\haml\haml.js" />
+    <Content Include="scripts\codemirror\mode\haml\index.html" />
+    <Content Include="scripts\codemirror\mode\haml\test.js" />
+    <Content Include="scripts\codemirror\mode\haskell\haskell.js" />
+    <Content Include="scripts\codemirror\mode\haskell\index.html" />
+    <Content Include="scripts\codemirror\mode\haxe\haxe.js" />
+    <Content Include="scripts\codemirror\mode\haxe\index.html" />
+    <Content Include="scripts\codemirror\mode\htmlembedded\htmlembedded.js" />
+    <Content Include="scripts\codemirror\mode\htmlembedded\index.html" />
+    <Content Include="scripts\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="scripts\codemirror\mode\htmlmixed\index.html" />
+    <Content Include="scripts\codemirror\mode\http\http.js" />
+    <Content Include="scripts\codemirror\mode\http\index.html" />
+    <Content Include="scripts\codemirror\mode\index.html" />
+    <Content Include="scripts\codemirror\mode\jade\index.html" />
+    <Content Include="scripts\codemirror\mode\jade\jade.js" />
+    <Content Include="scripts\codemirror\mode\javascript\index.html" />
+    <Content Include="scripts\codemirror\mode\javascript\javascript.js" />
+    <Content Include="scripts\codemirror\mode\javascript\json-ld.html" />
+    <Content Include="scripts\codemirror\mode\javascript\test.js" />
+    <Content Include="scripts\codemirror\mode\javascript\typescript.html" />
+    <Content Include="scripts\codemirror\mode\jinja2\index.html" />
+    <Content Include="scripts\codemirror\mode\jinja2\jinja2.js" />
+    <Content Include="scripts\codemirror\mode\julia\index.html" />
+    <Content Include="scripts\codemirror\mode\julia\julia.js" />
+    <Content Include="scripts\codemirror\mode\kotlin\index.html" />
+    <Content Include="scripts\codemirror\mode\kotlin\kotlin.js" />
+    <Content Include="scripts\codemirror\mode\livescript\index.html" />
+    <Content Include="scripts\codemirror\mode\livescript\livescript.js" />
+    <Content Include="scripts\codemirror\mode\lua\index.html" />
+    <Content Include="scripts\codemirror\mode\lua\lua.js" />
+    <Content Include="scripts\codemirror\mode\markdown\index.html" />
+    <Content Include="scripts\codemirror\mode\markdown\markdown.js" />
+    <Content Include="scripts\codemirror\mode\markdown\test.js" />
+    <Content Include="scripts\codemirror\mode\meta.js" />
+    <Content Include="scripts\codemirror\mode\mirc\index.html" />
+    <Content Include="scripts\codemirror\mode\mirc\mirc.js" />
+    <Content Include="scripts\codemirror\mode\mllike\index.html" />
+    <Content Include="scripts\codemirror\mode\mllike\mllike.js" />
+    <Content Include="scripts\codemirror\mode\modelica\index.html" />
+    <Content Include="scripts\codemirror\mode\modelica\modelica.js" />
+    <Content Include="scripts\codemirror\mode\nginx\index.html" />
+    <Content Include="scripts\codemirror\mode\nginx\nginx.js" />
+    <Content Include="scripts\codemirror\mode\ntriples\index.html" />
+    <Content Include="scripts\codemirror\mode\ntriples\ntriples.js" />
+    <Content Include="scripts\codemirror\mode\octave\index.html" />
+    <Content Include="scripts\codemirror\mode\octave\octave.js" />
+    <Content Include="scripts\codemirror\mode\pascal\index.html" />
+    <Content Include="scripts\codemirror\mode\pascal\pascal.js" />
+    <Content Include="scripts\codemirror\mode\pegjs\index.html" />
+    <Content Include="scripts\codemirror\mode\pegjs\pegjs.js" />
+    <Content Include="scripts\codemirror\mode\perl\index.html" />
+    <Content Include="scripts\codemirror\mode\perl\perl.js" />
+    <Content Include="scripts\codemirror\mode\php\index.html" />
+    <Content Include="scripts\codemirror\mode\php\php.js" />
+    <Content Include="scripts\codemirror\mode\php\test.js" />
+    <Content Include="scripts\codemirror\mode\pig\index.html" />
+    <Content Include="scripts\codemirror\mode\pig\pig.js" />
+    <Content Include="scripts\codemirror\mode\properties\index.html" />
+    <Content Include="scripts\codemirror\mode\properties\properties.js" />
+    <Content Include="scripts\codemirror\mode\puppet\index.html" />
+    <Content Include="scripts\codemirror\mode\puppet\puppet.js" />
+    <Content Include="scripts\codemirror\mode\python\index.html" />
+    <Content Include="scripts\codemirror\mode\python\python.js" />
+    <Content Include="scripts\codemirror\mode\q\index.html" />
+    <Content Include="scripts\codemirror\mode\q\q.js" />
+    <Content Include="scripts\codemirror\mode\rpm\changes\index.html" />
+    <Content Include="scripts\codemirror\mode\rpm\index.html" />
+    <Content Include="scripts\codemirror\mode\rpm\rpm.js" />
+    <Content Include="scripts\codemirror\mode\rst\index.html" />
+    <Content Include="scripts\codemirror\mode\rst\rst.js" />
+    <Content Include="scripts\codemirror\mode\ruby\index.html" />
+    <Content Include="scripts\codemirror\mode\ruby\ruby.js" />
+    <Content Include="scripts\codemirror\mode\ruby\test.js" />
+    <Content Include="scripts\codemirror\mode\rust\index.html" />
+    <Content Include="scripts\codemirror\mode\rust\rust.js" />
+    <Content Include="scripts\codemirror\mode\r\index.html" />
+    <Content Include="scripts\codemirror\mode\r\r.js" />
+    <Content Include="scripts\codemirror\mode\sass\index.html" />
+    <Content Include="scripts\codemirror\mode\sass\sass.js" />
+    <Content Include="scripts\codemirror\mode\scheme\index.html" />
+    <Content Include="scripts\codemirror\mode\scheme\scheme.js" />
+    <Content Include="scripts\codemirror\mode\shell\index.html" />
+    <Content Include="scripts\codemirror\mode\shell\shell.js" />
+    <Content Include="scripts\codemirror\mode\shell\test.js" />
+    <Content Include="scripts\codemirror\mode\sieve\index.html" />
+    <Content Include="scripts\codemirror\mode\sieve\sieve.js" />
+    <Content Include="scripts\codemirror\mode\slim\index.html" />
+    <Content Include="scripts\codemirror\mode\slim\slim.js" />
+    <Content Include="scripts\codemirror\mode\slim\test.js" />
+    <Content Include="scripts\codemirror\mode\smalltalk\index.html" />
+    <Content Include="scripts\codemirror\mode\smalltalk\smalltalk.js" />
+    <Content Include="scripts\codemirror\mode\smartymixed\index.html" />
+    <Content Include="scripts\codemirror\mode\smartymixed\smartymixed.js" />
+    <Content Include="scripts\codemirror\mode\smarty\index.html" />
+    <Content Include="scripts\codemirror\mode\smarty\smarty.js" />
+    <Content Include="scripts\codemirror\mode\solr\index.html" />
+    <Content Include="scripts\codemirror\mode\solr\solr.js" />
+    <Content Include="scripts\codemirror\mode\sparql\index.html" />
+    <Content Include="scripts\codemirror\mode\sparql\sparql.js" />
+    <Content Include="scripts\codemirror\mode\sql\index.html" />
+    <Content Include="scripts\codemirror\mode\sql\sql.js" />
+    <Content Include="scripts\codemirror\mode\stex\index.html" />
+    <Content Include="scripts\codemirror\mode\stex\stex.js" />
+    <Content Include="scripts\codemirror\mode\stex\test.js" />
+    <Content Include="scripts\codemirror\mode\tcl\index.html" />
+    <Content Include="scripts\codemirror\mode\tcl\tcl.js" />
+    <Content Include="scripts\codemirror\mode\textile\index.html" />
+    <Content Include="scripts\codemirror\mode\textile\test.js" />
+    <Content Include="scripts\codemirror\mode\textile\textile.js" />
+    <Content Include="scripts\codemirror\mode\tiddlywiki\index.html" />
+    <Content Include="scripts\codemirror\mode\tiddlywiki\tiddlywiki.css" />
+    <Content Include="scripts\codemirror\mode\tiddlywiki\tiddlywiki.js" />
+    <Content Include="scripts\codemirror\mode\tiki\index.html" />
+    <Content Include="scripts\codemirror\mode\tiki\tiki.css" />
+    <Content Include="scripts\codemirror\mode\tiki\tiki.js" />
+    <Content Include="scripts\codemirror\mode\toml\index.html" />
+    <Content Include="scripts\codemirror\mode\toml\toml.js" />
+    <Content Include="scripts\codemirror\mode\tornado\index.html" />
+    <Content Include="scripts\codemirror\mode\tornado\tornado.js" />
+    <Content Include="scripts\codemirror\mode\turtle\index.html" />
+    <Content Include="scripts\codemirror\mode\turtle\turtle.js" />
+    <Content Include="scripts\codemirror\mode\vbscript\index.html" />
+    <Content Include="scripts\codemirror\mode\vbscript\vbscript.js" />
+    <Content Include="scripts\codemirror\mode\vb\index.html" />
+    <Content Include="scripts\codemirror\mode\vb\vb.js" />
+    <Content Include="scripts\codemirror\mode\velocity\index.html" />
+    <Content Include="scripts\codemirror\mode\velocity\velocity.js" />
+    <Content Include="scripts\codemirror\mode\verilog\index.html" />
+    <Content Include="scripts\codemirror\mode\verilog\test.js" />
+    <Content Include="scripts\codemirror\mode\verilog\verilog.js" />
+    <Content Include="scripts\codemirror\mode\xml\index.html" />
+    <Content Include="scripts\codemirror\mode\xml\test.js" />
+    <Content Include="scripts\codemirror\mode\xml\xml.js" />
+    <Content Include="scripts\codemirror\mode\xquery\index.html" />
+    <Content Include="scripts\codemirror\mode\xquery\test.js" />
+    <Content Include="scripts\codemirror\mode\xquery\xquery.js" />
+    <Content Include="scripts\codemirror\mode\yaml\index.html" />
+    <Content Include="scripts\codemirror\mode\yaml\yaml.js" />
+    <Content Include="scripts\codemirror\mode\z80\index.html" />
+    <Content Include="scripts\codemirror\mode\z80\z80.js" />
+    <Content Include="scripts\dropzone\dropzone.js" />
+    <Content Include="scripts\inspinia.js" />
+    <Content Include="scripts\jasny\jasny-bootstrap.min.js" />
+    <Content Include="scripts\jquery-ui\jquery-ui.js" />
+    <Content Include="scripts\jquery-ui\jquery-ui.min.js" />
+    <Content Include="scripts\jquery-ui\jquery.blueimp-gallery.min.js" />
+    <Content Include="scripts\jquery\datatables.min.js" />
+    <Content Include="scripts\jquery\jquery-2.1.1.js" />
+    <Content Include="scripts\metisMenu\jquery.metisMenu.js" />
+    <Content Include="scripts\pace\pace.min.js" />
+    <Content Include="scripts\slimscroll\jquery.slimscroll.js" />
+    <Content Include="scripts\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Attribute\SessionManager.cs" />
+    <Compile Include="Controllers\CarritoController.cs" />
+    <Compile Include="Controllers\CategoriasController.cs" />
+    <Compile Include="Controllers\CiudadController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\DevolucionController.cs" />
+    <Compile Include="Controllers\DevolucionDetallesController.cs" />
+    <Compile Include="Controllers\EmpleadoCargoController.cs" />
+    <Compile Include="Controllers\EmpleadoController.cs" />
+    <Compile Include="Controllers\EmpleadoDepartamentoController.cs" />
+    <Compile Include="Controllers\EntradaController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\EstadoFacturaController.cs" />
+    <Compile Include="Controllers\EstadoTransaccionController.cs" />
+    <Compile Include="Controllers\FacturaController.cs" />
+    <Compile Include="Controllers\FormaPagoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InventarioFisicoController.cs" />
+    <Compile Include="Controllers\ListadoPrecioController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PaisController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\ProveedorController.cs" />
+    <Compile Include="Controllers\SalidaController.cs" />
+    <Compile Include="Controllers\TipoDescuentoController.cs" />
+    <Compile Include="Controllers\TipoPagoController.cs" />
+    <Compile Include="Controllers\TransaccionDetalleController.cs" />
+    <Compile Include="Controllers\VentasController.cs" />
+    <Compile Include="Filters\AuthorizeUser.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Generales.cs" />
+    <Compile Include="Models\cCategoria.cs" />
+    <Compile Include="Models\cCiudad.cs" />
+    <Compile Include="Models\cCliente.cs" />
+    <Compile Include="Models\cClienteDireccion.cs" />
+    <Compile Include="Models\cDevolucion.cs" />
+    <Compile Include="Models\cDevolucionDetalle.cs" />
+    <Compile Include="Models\cEmpleado.cs" />
+    <Compile Include="Models\cEmpleadoCargo.cs" />
+    <Compile Include="Models\cEmpleadoDepartamento.cs" />
+    <Compile Include="Models\cEntrada.cs" />
+    <Compile Include="Models\cEstadoFactura.cs" />
+    <Compile Include="Models\cEstadoTransaccion.cs" />
+    <Compile Include="Models\cFactura.cs" />
+    <Compile Include="Models\cFormaPago.cs" />
+    <Compile Include="Models\cInventarioFisico.cs" />
+    <Compile Include="Models\cListadoPrecio.cs" />
+    <Compile Include="Models\cListadoPrecioDetalle.cs" />
+    <Compile Include="Models\cPais.cs" />
+    <Compile Include="Models\cProducto.cs" />
+    <Compile Include="Models\cProveedor.cs" />
+    <Compile Include="Models\cSalida.cs" />
+    <Compile Include="Models\cSubCategoria.cs" />
+    <Compile Include="Models\cTipoDescuento.cs" />
+    <Compile Include="Models\cTipoPago.cs" />
+    <Compile Include="Models\cTransaccionDetalle.cs" />
+    <Compile Include="Models\Helpers.cs" />
+    <Compile Include="Models\InventarioFisico.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LateOSModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LateOSModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LateOSModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LateOSModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LateOSModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbCarrito.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbCategoria.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbCiudad.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbCliente.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbClienteDireccion.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbDevolucion.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbDevolucionDetalle.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbEmpleado.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbEmpleadoCargo.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbEmpleadoDepartamento.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbEntrada.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbEstadoFactura.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbEstadoTransaccion.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbFactura.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbFacturaDetalle.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbFormaPago.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbListadoPrecio.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbListadoPrecioDetalle.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbPais.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbProducto.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbProductoImagen.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbProveedor.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbRol.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbSalida.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbSubCategoria.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbTipoDescuento.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbTipoPago.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbTransaccionDetalle.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbUsuarios.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Acce_tbUsuario_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_CantGenderUser_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_CantOnlineUser_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbCiudad_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbCiudad_Select__Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbCiudad_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbEmpleadoCargo_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbEmpleadoCargo_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbEmpleadoDepartamento_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbEmpleadoDepartamento_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbEmpleado_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbEmpleado_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbPais_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbPais_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbTipoDescuento_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbTipoDescuento_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbTipoPago_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Gral_tbTipoPago_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_InventarioFisico_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_InventarioFisico_Select_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_InventarioFisico_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_Producto_Select_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCarrito_Delete_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCarrito_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCarrito_Select1_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCarrito_Select_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCarrito_Select_Result1.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCarrito_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCategoria_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCategoria_Select__Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbCategoria_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbEntrada_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbEntrada_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbProductoImagen_Delete_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbProductoImagen_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbProducto_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbProducto_Select_Categoria_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbProducto_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbProveedor_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbProveedor_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbSalida_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbSalida_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbSubCategoria_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Inv_tbSubCategoria_Select__Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbClienteDireccion_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbClienteDireccion_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbCliente_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbCliente_Select__Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbCliente_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbDevolucionDetalle_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbDevolucionDetalle_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbDevolucion_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbDevolucion_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbEstadoFactura_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbEstadoFactura_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbEstadoTransaccion_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbEstadoTransaccion_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbFacturaDetalle_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbFacturaDetalle_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbFactura_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbFactura_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbFormaPago_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbFormaPago_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbListadoPrecioDetalle_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbListadoPrecioDetalle_Select_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbListadoPrecioDetalle_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbListadoPrecio_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbListadoPrecio_Select_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbListadoPrecio_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbTransaccionDetalle_Insert_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbTransaccionDetalle_Select__Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UDP_Vent_tbTransaccionDetalle_Update_Result.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Usuario_Rol.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModel\LoginViewModel.cs" />
+    <Compile Include="Models\ViewModel\RecoveryPasswordViewModel.cs" />
+    <Compile Include="Models\ViewModel\RecoveryViewModel.cs" />
+    <Compile Include="Models\ViewModel\RegisterViewModel.cs" />
+    <Compile Include="Models\V_Producto_Informacion.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\V_Producto_Select.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\V_RecuperarCuenta.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\V_Usuarios.cs">
+      <DependentUpon>LateOSModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome\less\animated.less" />
+    <Content Include="Content\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Content\font-awesome\less\core.less" />
+    <Content Include="Content\font-awesome\less\fixed-width.less" />
+    <Content Include="Content\font-awesome\less\font-awesome.less" />
+    <Content Include="Content\font-awesome\less\icons.less" />
+    <Content Include="Content\font-awesome\less\larger.less" />
+    <Content Include="Content\font-awesome\less\list.less" />
+    <Content Include="Content\font-awesome\less\mixins.less" />
+    <Content Include="Content\font-awesome\less\path.less" />
+    <Content Include="Content\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Content\font-awesome\less\stacked.less" />
+    <Content Include="Content\font-awesome\less\variables.less" />
+    <Content Include="Content\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Content\font-awesome\scss\_animated.scss" />
+    <Content Include="Content\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\font-awesome\scss\_core.scss" />
+    <Content Include="Content\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Content\font-awesome\scss\_icons.scss" />
+    <Content Include="Content\font-awesome\scss\_larger.scss" />
+    <Content Include="Content\font-awesome\scss\_list.scss" />
+    <Content Include="Content\font-awesome\scss\_mixins.scss" />
+    <Content Include="Content\font-awesome\scss\_path.scss" />
+    <Content Include="Content\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\font-awesome\scss\_stacked.scss" />
+    <Content Include="Content\font-awesome\scss\_variables.scss" />
+    <EntityDeploy Include="Models\LateOSModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LateOSModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\LateOSModel.edmx.diagram">
+      <DependentUpon>LateOSModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Views\Pais\Create.cshtml" />
+    <Content Include="Views\Pais\Delete.cshtml" />
+    <Content Include="Views\Pais\Details.cshtml" />
+    <Content Include="Views\Pais\Edit.cshtml" />
+    <Content Include="Views\Pais\Index.cshtml" />
+    <Content Include="Views\EmpleadoDepartamento\Create.cshtml" />
+    <Content Include="Views\EmpleadoDepartamento\Delete.cshtml" />
+    <Content Include="Views\EmpleadoDepartamento\Details.cshtml" />
+    <Content Include="Views\EmpleadoDepartamento\Edit.cshtml" />
+    <Content Include="Views\EmpleadoDepartamento\Index.cshtml" />
+    <Content Include="Views\EmpleadoCargo\Create.cshtml" />
+    <Content Include="Views\EmpleadoCargo\Delete.cshtml" />
+    <Content Include="Views\EmpleadoCargo\Details.cshtml" />
+    <Content Include="Views\EmpleadoCargo\Edit.cshtml" />
+    <Content Include="Views\EmpleadoCargo\Index.cshtml" />
+    <Content Include="Views\Ciudad\Create.cshtml" />
+    <Content Include="Views\Ciudad\Delete.cshtml" />
+    <Content Include="Views\Ciudad\Details.cshtml" />
+    <Content Include="Views\Ciudad\Edit.cshtml" />
+    <Content Include="Views\Ciudad\Index.cshtml" />
+    <Content Include="Views\TipoDescuento\Create.cshtml" />
+    <Content Include="Views\TipoDescuento\Delete.cshtml" />
+    <Content Include="Views\TipoDescuento\Details.cshtml" />
+    <Content Include="Views\TipoDescuento\Edit.cshtml" />
+    <Content Include="Views\TipoDescuento\Index.cshtml" />
+    <Content Include="Views\TipoPago\Create.cshtml" />
+    <Content Include="Views\TipoPago\Delete.cshtml" />
+    <Content Include="Views\TipoPago\Details.cshtml" />
+    <Content Include="Views\TipoPago\Edit.cshtml" />
+    <Content Include="Views\TipoPago\Index.cshtml" />
+    <Content Include="Views\Empleado\Create.cshtml" />
+    <Content Include="Views\Empleado\Delete.cshtml" />
+    <Content Include="Views\Empleado\Details.cshtml" />
+    <Content Include="Views\Empleado\Edit.cshtml" />
+    <Content Include="Views\Empleado\Index.cshtml" />
+    <Content Include="Views\Categorias\Create.cshtml" />
+    <Content Include="Views\Categorias\Delete.cshtml" />
+    <Content Include="Views\Categorias\Details.cshtml" />
+    <Content Include="Views\Categorias\Edit.cshtml" />
+    <Content Include="Views\Categorias\Index.cshtml" />
+    <Content Include="Views\Categorias\_CreateSubCategoria.cshtml" />
+    <Content Include="Views\Cliente\Create.cshtml" />
+    <Content Include="Views\Cliente\Delete.cshtml" />
+    <Content Include="Views\Cliente\Details.cshtml" />
+    <Content Include="Views\Cliente\Edit.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="Views\Categorias\_IndexSubCategoria.cshtml" />
+    <Content Include="Views\Cliente\_CreateClienteDirecciones.cshtml" />
+    <Content Include="Views\Cliente\_IndexClienteDireccion.cshtml" />
+    <Content Include="Views\ListadoPrecio\Create.cshtml" />
+    <Content Include="Views\ListadoPrecio\Delete.cshtml" />
+    <Content Include="Views\ListadoPrecio\Details.cshtml" />
+    <Content Include="Views\ListadoPrecio\Edit.cshtml" />
+    <Content Include="Views\ListadoPrecio\Index.cshtml" />
+    <Content Include="Views\ListadoPrecio\_IndexListadoPrecioDetalle.cshtml" />
+    <Content Include="Views\Pais\_CreateCiudad.cshtml" />
+    <Content Include="Views\Pais\_IndexCiudad.cshtml" />
+    <Content Include="Views\Categorias\_EditCategoria.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Categorias\_EditSubCategoria.cshtml" />
+    <Content Include="Content\bootstrap\bootstrap.css.map" />
+    <Content Include="Content\bootstrap\bootstrap.min.css.map" />
+    <Content Include="Views\Pais\_EditCiudad.cshtml" />
+    <Content Include="Views\Factura\Create.cshtml" />
+    <Content Include="Views\Factura\Delete.cshtml" />
+    <Content Include="Views\Factura\Details.cshtml" />
+    <Content Include="Views\Factura\Edit.cshtml" />
+    <Content Include="Views\Factura\Index.cshtml" />
+    <Content Include="Views\Factura\_IndexFacturaDetalle.cshtml" />
+    <Content Include="Views\ListadoPrecio\_EditListadoPrecioDetalle.cshtml" />
+    <Content Include="Views\InventarioFisico\Create.cshtml" />
+    <Content Include="Views\InventarioFisico\Delete.cshtml" />
+    <Content Include="Views\InventarioFisico\Details.cshtml" />
+    <Content Include="Views\InventarioFisico\Edit.cshtml" />
+    <Content Include="Views\InventarioFisico\Index.cshtml" />
+    <Content Include="Views\InventarioFisico\_EditInventarioFisico.cshtml" />
+    <Content Include="Views\TransaccionDetalle\Create.cshtml" />
+    <Content Include="Views\TransaccionDetalle\Delete.cshtml" />
+    <Content Include="Views\TransaccionDetalle\Details.cshtml" />
+    <Content Include="Views\TransaccionDetalle\Edit.cshtml" />
+    <Content Include="Views\TransaccionDetalle\Index.cshtml" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\Producto\Create.cshtml" />
+    <Content Include="Views\Producto\Delete.cshtml" />
+    <Content Include="Views\Producto\Details.cshtml" />
+    <Content Include="Views\Producto\Edit.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Producto\_IndexProductoImagen.cshtml" />
+    <Content Include="bin\ApplicationInsights.config" />
+    <Content Include="bin\LateOS.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="CodeTemplates\MvcView\Create.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Create.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Delete.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Delete.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Details.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Details.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Edit.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Edit.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Empty.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Empty.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Imports.include.t4" />
+    <Content Include="CodeTemplates\MvcView\List.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\List.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\ModelMetadataFunctions.cs.include.t4" />
+    <Content Include="CodeTemplates\MvcView\ModelMetadataFunctions.vb.include.t4" />
+    <Content Include="Views\Devolucion\Create.cshtml" />
+    <Content Include="Views\Devolucion\Delete.cshtml" />
+    <Content Include="Views\Devolucion\Details.cshtml" />
+    <Content Include="Views\Devolucion\Edit.cshtml" />
+    <Content Include="Views\Devolucion\Index.cshtml" />
+    <Content Include="Views\DevolucionDetalles\Create.cshtml" />
+    <Content Include="Views\DevolucionDetalles\Delete.cshtml" />
+    <Content Include="Views\DevolucionDetalles\Details.cshtml" />
+    <Content Include="Views\DevolucionDetalles\Edit.cshtml" />
+    <Content Include="Views\DevolucionDetalles\Index.cshtml" />
+    <Content Include="Views\EstadoFactura\Create.cshtml" />
+    <Content Include="Views\EstadoFactura\Delete.cshtml" />
+    <Content Include="Views\EstadoFactura\Details.cshtml" />
+    <Content Include="Views\EstadoFactura\Edit.cshtml" />
+    <Content Include="Views\EstadoFactura\Index.cshtml" />
+    <Content Include="Views\EstadoTransaccion\Create.cshtml" />
+    <Content Include="Views\EstadoTransaccion\Delete.cshtml" />
+    <Content Include="Views\EstadoTransaccion\Details.cshtml" />
+    <Content Include="Views\EstadoTransaccion\Edit.cshtml" />
+    <Content Include="Views\EstadoTransaccion\Index.cshtml" />
+    <Content Include="Views\FormaPago\Create.cshtml" />
+    <Content Include="Views\FormaPago\Delete.cshtml" />
+    <Content Include="Views\FormaPago\Details.cshtml" />
+    <Content Include="Views\FormaPago\Edit.cshtml" />
+    <Content Include="Views\FormaPago\Index.cshtml" />
+    <Content Include="Views\Proveedor\Create.cshtml" />
+    <Content Include="Views\Proveedor\Delete.cshtml" />
+    <Content Include="Views\Proveedor\Details.cshtml" />
+    <Content Include="Views\Proveedor\Edit.cshtml" />
+    <Content Include="Views\Proveedor\Index.cshtml" />
+    <Content Include="Views\Salida\Create.cshtml" />
+    <Content Include="Views\Salida\Delete.cshtml" />
+    <Content Include="Views\Salida\Details.cshtml" />
+    <Content Include="Views\Salida\Edit.cshtml" />
+    <Content Include="Views\Salida\Index.cshtml" />
+    <Content Include="Views\Entrada\Create.cshtml" />
+    <Content Include="Views\Entrada\Delete.cshtml" />
+    <Content Include="Views\Entrada\Details.cshtml" />
+    <Content Include="Views\Entrada\Edit.cshtml" />
+    <Content Include="Views\Entrada\Index.cshtml" />
+    <Content Include="Views\Ventas\Create.cshtml" />
+    <Content Include="Views\Ventas\Delete.cshtml" />
+    <Content Include="Views\Ventas\Details.cshtml" />
+    <Content Include="Views\Ventas\Edit.cshtml" />
+    <Content Include="Views\Ventas\Index.cshtml" />
+    <Content Include="Views\Ventas\profile.cshtml" />
+    <Content Include="Views\Carrito\Create.cshtml" />
+    <Content Include="Views\Carrito\Delete.cshtml" />
+    <Content Include="Views\Carrito\Edit.cshtml" />
+    <Content Include="Views\Carrito\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Error\UnauthorizedOperation.cshtml" />
+    <Content Include="Views\Login\StartRecovery.cshtml" />
+    <Content Include="Views\Login\Recovery.cshtml" />
+    <Content Include="Views\Login\Register.cshtml" />
+    <Content Include="Views\Home\InfoStatus.cshtml" />
+    <Content Include="Views\Cliente\Index_Admin.cshtml" />
+    <Content Include="Views\Cliente\_EditCliente_Admin.cshtml" />
+    <Content Include="Views\Cliente\_DetalleCliente_Admin.cshtml" />
+    <Content Include="Views\Carrito\DetailsFactura.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52593</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52593/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

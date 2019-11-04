@@ -1,0 +1,33 @@
+﻿@model IEnumerable<LateOS.Models.tbClienteDireccion>
+
+<div class="ibox-content">
+<table class="table table-striped table-bordered dataTable">
+<thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.clted_Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbCiudad.ciu_Descripcion)
+        </th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.clted_Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbCiudad.ciu_Descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.clted_Id }, new {@class="btn btn-primary btn-xs"})
+            @Html.ActionLink("Detalles", "Details", new { id=item.clted_Id }, new {@class="btn btn-default btn-xs"})
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+</div>

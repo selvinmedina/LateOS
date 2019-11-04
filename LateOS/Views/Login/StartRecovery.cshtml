@@ -1,0 +1,24 @@
+﻿@model LateOS.Models.ViewModel.RecoveryViewModel
+@{
+    ViewBag.Title = "Restablecer contraseña";
+}
+
+<div class="row">
+    <div class="col-md-6 offset-3">
+        <div class="form-style">
+            <form action="@Url.Content("~/Login/StartRecovery")" method="post">
+                <h3><label  class="label-success">@ViewBag.Message</label></h3>
+                <h3><label class="label-danger">@ViewBag.Error</label></h3>
+                <label>Ingrese su correo electrónico</label>
+                <div class="form-group">
+                    @Html.TextBoxFor(d => d.Email, null, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(d => d.Email, null, new { style = "color:red;" })
+                </div>
+                <br />
+                <div class="text-right">
+                    <button class="btn btn-primary">Recuperar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

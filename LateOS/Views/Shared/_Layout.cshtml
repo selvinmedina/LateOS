@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>@ViewBag.Title - LateOS</title>
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/font-awesome")
+    @Styles.Render("~/Content/gritter")
+    @Styles.Render("~/Content/mas")
+    <link href="~/Content/bootstrap/blueimp-gallery.min.css" rel="stylesheet" />
+ 
+</head>
+<body>
+    <div id="wrapper">
+
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <img src="~/Content/img/Logo.jpg" width="100%" height="100%" class="img-circle" />
+                    </li>
+                    @{
+                        var nombre = (LateOS.Models.V_Usuarios)HttpContext.Current.Session["User"];
+                        var rol = HttpContext.Current.Session["rol"];
+                        if (nombre != null && rol == "admin")
+                        {
+                            <li>
+                                <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">General</span> <span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="~/Pais">País</a></li>
+                                    <li><a href="~/Empleado">Empleado</a></li>
+                                    <li><a href="~/EmpleadoCargo">Cargos</a></li>
+                                    <li><a href="~/EmpleadoDepartamento">Departamentos</a></li>
+                                    <li><a href="~/TipoDescuento">Tipo Descuento</a></li>
+                                    <li><a href="~/TipoPago">Tipo Pago</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Ventas</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="~/Cliente/Index_Admin">Cliente</a></li>
+                                    <li><a href="~/Devolucion">Devolución</a></li>
+                                    <li><a href="~/Factura">Facturas</a></li>
+                                    <li><a href="~/EstadoTransaccion">Estado Transacción</a></li>                                    
+                                    <li><a href="~/FormaPago">Forma Pago</a></li>
+                                    <li><a href="~/ListadoPrecio">Listado Precio</a></li>
+                                    <li><a href="~/TransaccionDetalle">Transacción Detalle</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Inventario</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="~/InventarioFisico">Inventario Fisico</a></li>
+                                    <li><a href="~/Categorias">Categoria</a></li>
+                                    <li><a href="~/Entrada">Entrada</a></li>
+                                    <li><a href="~/Salida">Salida</a></li>
+                                    <li><a href="~/Producto">Producto</a></li>
+                                    <li><a href="~/Proveedor">Proveedor</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Opciones</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="~/Home/Index">Home</a></li>
+                                    <li><a href="~/Ventas/Index">Productos</a></li>
+                                    <li><a href="~/Carrito/Index/">Carrito de compras</a></li>
+                                    <li><a href="~/Ventas/profile/">Perfil</a></li>
+                                    <li><a href="~/Login/LogOff">Cerrar sesión</a></li>
+                                </ul>
+                            </li>
+
+                        }
+                    }                    
+
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="#">
+                            <div class="form-group">
+                                <input type="text" placeholder="Buscar..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        @{
+
+                            if (nombre == null)
+                            {
+                                <li>
+                                    <span class="m-r-sm text-muted welcome-message">Bienvenido a LateOS Usuario !</span>
+                                </li>
+                                <li>
+                                    <a href="~/Login/Index">
+                                        <i class="fa fa-sign-in"></i> Iniciar sesión
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    <span class="m-r-sm text-muted welcome-message">
+                                        @Html.ActionLink(nombre.usu_NombreUsuario, "profile", "Ventas", new { @id = nombre.clte_Id }, null)
+                                    </span>                                  
+                                </li>
+
+                                <li>
+                                    <a href="~/Login/LogOff">
+                                        <i class="fa fa-sign-out"></i> Cerrar Sesion
+                                    </a>
+                                </li>
+
+                            }
+                        }                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wrapper wrapper-content">
+                        <div class="row">
+                            @RenderBody()
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2014-2017
+                </div>
+            </div>
+        </div>
+
+
+        @Scripts.Render("~/scripts/jquery")
+        @Scripts.Render("~/scripts/bootstrap")
+        @Scripts.Render("~/scripts/metisMenu")
+        @Scripts.Render("~/scripts/slimscroll")
+        @Scripts.Render("~/scripts/inspinia")
+        @Scripts.Render("~/scripts/mas")
+        <script src="~/scripts/App/General/Categoria.js"></script>
+        <script src="~/scripts/App/General/Cliente.js"></script>
+        <script src="~/scripts/App/General/ListadoPrecio.js"></script>
+        <script src="~/scripts/App/General/Pais.js"></script>
+        <script src="~/scripts/App/General/Factura.js"></script>
+        <script src="~/scripts/App/General/Producto.js"></script>
+        <script src="~/scripts/App/General/Carrito.js"></script>
+        <script src="~/scripts/jquery-ui/jquery.blueimp-gallery.min.js"></script>
+        @RenderSection("scripts", required: false)
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.dataTables-example').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+                },
+                pageLength: 25,
+                responsive: true
+            });
+
+        });
+
+    </script>
+
+    @* ATENTO A ESTE SCRIPT. Carga los scripts luego de cargar la pagina colocalo en el view del carrusel *@
+
+    @*<script type="text/javascript">
+        window.onload = function () {
+            $.getScript("../scripts/App/General/CarruselJs.js")
+              .done(function (script, textStatus) {
+                  console.log(textStatus);
+              })
+              .fail(function (jqxhr, settings, exception) {
+                  console.log("No se pudo recuperar Script CarruselJs");
+              });
+        };
+    </script>*@
+
+    @*<script>
+  document.getElementById('links').onclick = function(event) {
+    event = event || window.event
+    var target = event.target || event.srcElement,
+      link = target.src ? target.parentNode : target,
+      options = { index: link, event: event },
+      links = this.getElementsByTagName('a')
+    blueimp.Gallery(links, options)
+  }
+    </script>
+
+    <script>
+  document.getElementById('links2').onclick = function(event) {
+    event = event || window.event
+    var target = event.target || event.srcElement,
+      link = target.src ? target.parentNode : target,
+      options = { index: link, event: event },
+      links = this.getElementsByTagName('a')
+    blueimp.Gallery(links, options)
+  }
+    </script>
+
+    <script>
+        Dropzone.options.dropzoneForm = {
+            paramName: "file", // The name that will be used to transfer the file
+            maxFilesize: 2, // MB
+            dictDefaultMessage: "<strong>Drop files here or click to upload. </strong></br> (This is just a demo dropzone. Selected files are not actually uploaded.)"
+        };
+
+        $(document).ready(function(){
+
+            var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            var editor_two = CodeMirror.fromTextArea(document.getElementById("code2"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+            var editor_two = CodeMirror.fromTextArea(document.getElementById("code3"), {
+                lineNumbers: true,
+                matchBrackets: true
+            });
+
+       });
+    </script>*@
+</body>
+</html>

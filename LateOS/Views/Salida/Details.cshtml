@@ -1,0 +1,88 @@
+﻿@model LateOS.Models.tbSalida
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12">
+<div class="ibox float-e-margins">
+<div class="ibox-title">
+	@Html.ActionLink("Regresar", "Index", null, new {@class="pull-right" })
+	<h2>Details</h2>
+</div>
+
+<div class="ibox-content">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sali_Existencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sali_Existencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sali_Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sali_Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sali_FechaEntrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sali_FechaEntrada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sali_FechaCrea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sali_FechaCrea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sali_FechaModifica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sali_FechaModifica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbUsuarios.usu_NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbUsuarios.usu_NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbUsuarios1.usu_NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbUsuarios1.usu_NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbProducto.prod_Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbProducto.prod_Codigo)
+        </dd>
+
+    </dl>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.sali_Id }, new {@class="btn btn-primary" }) 
+    @Html.ActionLink("Cancelar", "Index", null, new {@class="btn btn-default" })
+</p>
+</div>
+</div>
+</div>

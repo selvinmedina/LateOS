@@ -1,0 +1,50 @@
+﻿@model LateOS.Models.tbCliente
+
+@{
+    ViewBag.Title = "profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-8 col-lg-offset-2">
+<div class="ibox float-e-margins">
+<div class="ibox-title">
+	<h2>Perfil</h2>
+</div>
+
+    <div class="ibox-content">
+        <!-- Profile Image -->
+        <div class="box box-primary">
+            <div class="box-body box-profile">
+                <img class="profile-user-img img-responsive img-circle" src="~/Content/img/profile_small.jpg" alt="Foto de perfil">
+
+                <h3 class="profile-username text-center">@Html.DisplayFor(model => model.clte_Nombre) @Html.DisplayFor(model => model.clte_Apellido)</h3>
+
+                <p class="text-muted text-center">@Html.DisplayFor(model => model.tbUsuarios.usu_NombreUsuario)r</p>
+
+                <ul class="list-group list-group-unbordered">
+                    <li class="list-group-item">
+                        <b>Identidad</b> <a class="pull-right">@Html.DisplayFor(model => model.clte_Identidad)</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Fecha nacimiento</b> <a class="pull-right">@Html.DisplayFor(model => model.clte_FechaNacimiento)</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Sexo</b> <a class="pull-right">@Html.DisplayFor(model => model.clte_Sexo)</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Teléfono</b> <a class="pull-right">@Html.DisplayFor(model => model.clte_Telefono)</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Correo electrónico</b> <a class="pull-right">@Html.DisplayFor(model => model.clte_Correo)</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+
+    </div>
+
+    
+</div>
+</div>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ec98ed0c7a1d4ba996d3e575509050a8" Name="Diagram1" ZoomLevel="69">
+        <EntityTypeShape EntityType="LateOSModel.tbUsuarios" Width="1.5" PointX="0.75" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbCiudad" Width="1.5" PointX="5.25" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbEmpleado" Width="1.5" PointX="10.5" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbEmpleadoCargo" Width="1.5" PointX="5.25" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbEmpleadoDepartamento" Width="1.5" PointX="3" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbPais" Width="1.5" PointX="3" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbTipoDescuento" Width="1.5" PointX="3" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbTipoPago" Width="1.5" PointX="3" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.InventarioFisico" Width="1.5" PointX="18.75" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbCategoria" Width="1.5" PointX="3" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbEntrada" Width="1.5" PointX="18.75" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbProveedor" Width="1.5" PointX="3" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbSalida" Width="1.5" PointX="18.75" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbSubCategoria" Width="1.5" PointX="8.25" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbCliente" Width="1.5" PointX="3" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbClienteDireccion" Width="1.5" PointX="7.5" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbDevolucion" Width="1.5" PointX="10.5" PointY="39.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbDevolucionDetalle" Width="1.5" PointX="15.75" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbEstadoFactura" Width="1.5" PointX="3" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbEstadoTransaccion" Width="1.5" PointX="3" PointY="56" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbFactura" Width="1.5" PointX="5.25" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbFacturaDetalle" Width="1.5" PointX="7.5" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbFormaPago" Width="1.5" PointX="3" PointY="59.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbListadoPrecio" Width="1.5" PointX="3" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbListadoPrecioDetalle" Width="1.5" PointX="5.25" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LateOSModel.tbTransaccionDetalle" Width="1.5" PointX="10.5" PointY="43.625" IsExpanded="true" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbCiudad_ciu_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbCiudad_ciu_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleadoCargo_empc_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleadoCargo_empc_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleadoDepartamento_empd_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleados_emp_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleados_emp_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleados_usu_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbPais_pais_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbPais_pais_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbTipoDescuento_tipd_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbTipoDescuento_tipd_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbTipoPago_tipp_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbTipoPago_tipp_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbCategoria_cat_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbCategoria_cat_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbEntrada_ent_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbEntrada_ent_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbInventarioFisico_invf_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbInventarioFisico_invf_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProveedor_prov_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProveedor_prov_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_INV_tbSalida_sali_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_INV_tbSalida_sali_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbSubCategoria_subc_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbSubCategoria_subc_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbClienteDireccion_clid_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbClienteDireccion_clid_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbClientes_cli_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbClientes_cli_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbClientes_usu_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbDevolucion_dev_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbDevolucion_dev_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbDevolucionDetalle_devd_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbDevolucionDetalle_devd_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbEstadoFactura_estf_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbEstadoFactura_estf_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbEstadoTransaccion_estt_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbEstadoTransaccion_estt_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFactura_fact_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFactura_fact_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFacturaDetalle_facd_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFacturaDetalle_facd_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFormaPago_forp_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFormaPago_forp_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_lip_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_lipd_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbTransaccionDetalle_trad_UsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbTransaccionDetalle_trad_UsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbCiudad_Id_Pais" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbClienteDireccion_ciu_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleados_IdCargo" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Gral_tbEmpleadoCargo_empd_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_tipd_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFactura_fact_IdPago" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbSubCategoria_cat_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbClienteDireccion_clie_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFactura_fact_IdCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbDevolucion_fact_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbDevolucionDetalle_dev_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFactura_fact_IdFormaPago" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFacturaDetalle_fact_IdFact" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbTransaccionDetalle_fact_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_lip_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbTransaccionDetalle_estt_Id" />
+        <EntityTypeShape EntityType="LateOSModel.tbProducto" Width="1.5" PointX="13.5" PointY="38" />
+        <EntityTypeShape EntityType="LateOSModel.tbProductoImagen" Width="1.5" PointX="15.75" PointY="41.25" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProducto_prod_UsuarioCrea" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProducto_prod_UsuarioModifica" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioCrea" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProductoImagen_proi_UsuarioModifica" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_InventarioFisico_prod_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbEntrada_prod_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProducto_prov_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProducto_subc_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbProductoImagen_prod_Id" />
+        <AssociationConnector Association="LateOSModel.FK_INV_tbSaliada_prod_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbListadoPrecioDetalle_prod_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Vent_tbFacturaDetalle_prod_Id" />
+        <EntityTypeShape EntityType="LateOSModel.tbRol" Width="1.5" PointX="8.125" PointY="31" />
+        <EntityTypeShape EntityType="LateOSModel.tbCarrito" Width="1.5" PointX="16.125" PointY="45.875" />
+        <EntityTypeShape EntityType="LateOSModel.Usuario_Rol" Width="1.5" PointX="10.375" PointY="30.75" />
+        <EntityTypeShape EntityType="LateOSModel.V_Producto_Informacion" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LateOSModel.V_Producto_Select" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="LateOSModel.V_RecuperarCuenta" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LateOSModel.V_Usuarios" Width="1.5" PointX="5.75" PointY="3.75" />
+        <AssociationConnector Association="LateOSModel.FK_ACCE_TBROL_id" />
+        <AssociationConnector Association="LateOSModel.FK_ACCE_TBUSUARIO_usu_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbCarrito_clte_Id" />
+        <AssociationConnector Association="LateOSModel.FK_Inv_tbCarrito_prod_Id" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

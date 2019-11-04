@@ -1,0 +1,29 @@
+﻿@model IEnumerable<LateOS.Models.tbProductoImagen>
+
+<div class="ibox-content justify-content-center">
+<table class="table table-striped table-bordered dataTable"  id="tblProductoImagen">
+<thead>
+    <tr>
+    </tr>
+</thead>
+<tbody>
+@foreach (var item in Model)
+{
+    ViewBag.Id = item.prod_Id;
+    <tr data-id="@item.proi_Id">
+        <td>
+            <img width="200" height="150"  src="../../@item.proi_imagen"/>
+        </td>
+        <td>
+            <br />
+            <br />
+            <br />
+            <button class="btn btn-outline btn-danger" type="button" id="btnEliminarProductoImagen">Eliminar</button>
+        </td>
+    </tr>
+}
+
+</tbody>
+</table>
+
+</div>

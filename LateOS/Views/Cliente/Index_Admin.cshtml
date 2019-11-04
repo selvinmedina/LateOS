@@ -1,0 +1,151 @@
+﻿@model IEnumerable<LateOS.Models.tbCliente>
+
+@{
+    ViewBag.Title = "Index_Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Listado General de Clientes</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                            @*DataTables_Table_0*@
+                            <table class="table table-striped table-bordered table-hover dataTables-example dataTable dtr-inline" id="tblCliente" aria-describedby="DataTables_Table_0_info" role="grid">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 210px;">@Html.DisplayNameFor(model => model.clte_Identidad)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 260px;">@Html.DisplayNameFor(model => model.clte_Nombre)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 235px;">@Html.DisplayNameFor(model => model.clte_Apellido)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 180px;">@Html.DisplayNameFor(model => model.clte_FechaNacimiento)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.clte_Sexo)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.clte_Telefono)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;">@Html.DisplayNameFor(model => model.clte_Correo)</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 128px;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        var Sexo = item.clte_Sexo == "M" ? "Masculino" : "Femenino";
+                                        <tr class="gradeA odd" role="row" data-id="@item.clte_Id">
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.clte_Identidad)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.clte_Nombre)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.clte_Apellido)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.clte_FechaNacimiento)
+                                            </td>
+                                            <td>
+                                                @Sexo
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.clte_Telefono)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.clte_Correo)
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary btn-xs" id="btnEditarCliente">Editar</button>
+                                                <button type="button" class="btn btn-default btn-xs" id="btnDetalleCliente">Detalle</button>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th rowspan="1" colspan="1">@Html.DisplayNameFor(model => model.clte_Identidad)</th>
+                                        <th rowspan="1" colspan="1">@Html.DisplayNameFor(model => model.clte_Nombre)</th>
+                                        <th rowspan="1" colspan="1">@Html.DisplayNameFor(model => model.clte_Apellido)</th>
+                                        <th rowspan="1" colspan="1">@Html.DisplayNameFor(model => model.clte_FechaNacimiento)</th>
+                                        <th rowspan="1" colspan="1">@Html.DisplayNameFor(model => model.clte_Sexo)</th>
+                                        <th rowspan="1" colspan="1">@Html.DisplayNameFor(model => model.clte_Telefono)</th>
+                                        <th rowspan="1" colspan="1">@Html.DisplayNameFor(model => model.clte_Correo)</th>
+                                        <th rowspan="1" colspan="1"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* MODAL EDITAR *@
+<div class="modal fade" id="EditarCliente" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <i class="fa fa-toggle-on modal-icon"></i>
+                <h4 class="modal-title">Edición de datos</h4>
+            </div>
+            <div class="modal-body" id="Editar">
+                @*Mandamos un nuevo modelo solo para poder cargar la página *@
+                @Html.Partial("_EditCliente_Admin", new LateOS.Models.tbCliente())
+            </div>
+            <div class="modal-footer">
+                @*data-dismiss="modal"*@
+                <button type="button" class="btn btn-white" id="btnCerrarEditar">Close</button>
+                <button type="button" class="btn btn-primary" id="btnUpdateClie">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL DETALLE *@
+<div class="modal fade" id="DetalleCliente" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <i class="fa fa-toggle-off modal-icon"></i>
+                <h4 class="modal-title">Detalles</h4>
+            </div>
+            <div class="modal-body" id="Detalle">
+                @*Mandamos un nuevo modelo solo para poder cargar la página *@
+                @Html.Partial("_DetalleCliente_Admin", new LateOS.Models.tbCliente())
+            </div>
+            <div class="modal-footer">
+                @*data-dismiss="modal"*@
+                <button type="button" class="btn btn-white" id="btnCerrarDetalle">Close</button>
+                <button type="button" class="btn btn-primary" id="RedirectToEdit">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

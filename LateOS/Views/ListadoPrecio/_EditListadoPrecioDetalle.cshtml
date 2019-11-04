@@ -1,0 +1,67 @@
+﻿@model LateOS.Models.tbListadoPrecioDetalle
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "frmEditarListadoPrecioDetalle" }))
+{
+    <div class="ibox-content">
+
+        <div class="form-horizontal">
+            @Html.HiddenFor(model => model.lipd_Id)
+
+            @* ID LISTADO PRECIO *@
+            @Html.HiddenFor(model => model.lip_Id, "lip_Id")
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.prod_Id, "prod_Id", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("prod_Id", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.prod_Id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.tipd_Id, "tipd_Id", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("tipd_Id", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.tipd_Id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.lipd_Precio, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.lipd_Precio, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.lipd_Precio, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.lipd_ISV, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.lipd_ISV, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.lipd_ISV, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            @*ID USUARIO CREA *@
+            @Html.HiddenFor(model => model.lipd_UsuarioCrea)
+
+            @* FECHA CREA *@
+            @Html.HiddenFor(model => model.lipd_FechaCrea)
+
+            @* USUARIO MODIFICA *@
+            @Html.HiddenFor(model => model.lipd_UsuarioModifica)
+
+            @* FECHA MODIFICA *@
+            @Html.HiddenFor(model => model.lipd_FechaModifica)
+
+            @*<div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                        @Html.ActionLink("Cancelar", "Index", null, new { @class="btn btn-default"})
+                    </div>
+                </div>*@
+        </div>
+    </div>
+}
+
